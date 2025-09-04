@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Analytics } from "@vercel/analytics/next"
 
 // --- Composants d'icônes (SVG en ligne pour éviter les dépendances) ---
 
@@ -29,6 +30,7 @@ function App() {
 
   return (
     <div className="bg-amber-50 text-gray-800 font-sans">
+      <Analytics />
       {/* =========== Header / Barre de Navigation =========== */}
       <header className="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
         <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
