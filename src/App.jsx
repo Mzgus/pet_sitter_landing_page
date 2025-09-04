@@ -27,7 +27,8 @@ function App() {
   };
 
   return (
-    <div className="bg-amber-50 text-gray-800 font-sans">
+    <div className="bg-amber-100  text-gray-800 font-sans">
+    {/* </div><div className="bg-amber-100  text-gray-800 font-sans"> */}
       {/* =========== Header / Barre de Navigation =========== */}
       <header className="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
         <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
@@ -153,7 +154,7 @@ function App() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-amber-50 p-8 rounded-2xl shadow-sm border border-amber-200 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg">
+            <div className="bg-amber-100 p-8 rounded-2xl shadow-sm border border-amber-200 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg">
               <div className="bg-teal-100 text-teal-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
                 <img
                   src="../home.svg"
@@ -168,7 +169,7 @@ function App() {
                 anxieux.
               </p>
             </div>
-            <div className="bg-amber-50 p-8 rounded-2xl shadow-sm border border-amber-200 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg">
+            <div className="bg-amber-100 p-8 rounded-2xl shadow-sm border border-amber-200 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg">
               <div className="bg-teal-100 text-teal-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
                 <img
                   src="../cat.svg"
@@ -184,7 +185,7 @@ function App() {
                 et nettoyer la litière de votre chat ou autre petit compagnon.
               </p>
             </div>
-            <div className="bg-amber-50 p-8 rounded-2xl shadow-sm border border-amber-200 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg">
+            <div className="bg-amber-100 p-8 rounded-2xl shadow-sm border border-amber-200 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg">
               <div className="bg-teal-100 text-teal-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
                 <img
                   src="../dog.svg"
@@ -228,7 +229,9 @@ function App() {
               et offrir mes services en tant que pet sitter.
             </p>
             <p className="mt-4 text-lg text-gray-600">
-                En plus de mes quelques années d'éxpériences, j'ai obtenu mon ACAED pour avoir un status officiel, car le bien-être de vos animaux est ma priorité.
+              En plus de mes quelques années d'éxpériences, j'ai obtenu mon
+              ACAED pour avoir un status officiel, car le bien-être de vos
+              animaux est ma priorité.
             </p>
           </div>
         </div>
@@ -246,7 +249,7 @@ function App() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-amber-50 p-8 rounded-xl shadow-sm">
+            <div className="bg-amber-100 p-8 rounded-xl shadow-sm">
               <p className="text-gray-600 italic">
                 "Ornella a été incroyable avec notre chien Max. Nous avons reçu
                 des photos tous les jours et l'avons retrouvé plus heureux que
@@ -266,7 +269,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="bg-amber-50 p-8 rounded-xl shadow-sm">
+            <div className="bg-amber-100 p-8 rounded-xl shadow-sm">
               <p className="text-gray-600 italic">
                 "Très professionnelle et douce avec notre chatte Minette, qui
                 est pourtant très craintive. Un service de grande qualité, je
@@ -286,7 +289,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="bg-amber-50 p-8 rounded-xl shadow-sm">
+            <div className="bg-amber-100 p-8 rounded-xl shadow-sm">
               <p className="text-gray-600 italic">
                 "Les promenades sont le meilleur moment de la journée de mon
                 chienk, Ornella est fiable, ponctuelle et a une super connexion
