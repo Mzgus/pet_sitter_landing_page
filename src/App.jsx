@@ -2,36 +2,7 @@ import React, { useState } from 'react';
 
 // --- Composants d'icônes (SVG en ligne pour éviter les dépendances) ---
 
-const IconHome = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-    <polyline points="9 22 9 12 15 12 15 22"></polyline>
-  </svg>
-);
 
-const IconCat = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M12 5c-1.66 0-3 1.34-3 3v2c0 1.66 1.34 3 3 3s3-1.34 3-3V8c0-1.66-1.34-3-3-3z"></path>
-    <path d="M19.62 9.54c.48-1.45.1-3.14-1.12-4.36s-2.91-1.6-4.36-1.12"></path>
-    <path d="M4.38 9.54c-.48-1.45-.1-3.14 1.12-4.36s2.91-1.6 4.36-1.12"></path>
-    <path d="M12 13.5v2.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5V16"></path>
-    <path d="M12 13.5v2.5c0 .83-.67 1.5-1.5 1.5S9 16.83 9 16v-.5"></path>
-    <path d="M15.5 16a2.5 2.5 0 0 0-5 0"></path>
-  </svg>
-);
-
-const IconDog = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M12 6c-2.2 0-4 1.8-4 4v2c0 .6.4 1 1 1h6c.6 0 1-.4 1-1v-2c0-2.2-1.8-4-4-4z"></path>
-    <path d="M4.7 10.3c-.3 1.2.4 2.4 1.5 2.7"></path>
-    <path d="M17.8 13c1.1-.3 1.8-1.5 1.5-2.7"></path>
-    <path d="M5 16.5c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5"></path>
-    <path d="M14 16.5c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5"></path>
-    <path d="M10 13v1"></path>
-    <path d="M14 13v1"></path>
-    <path d="M12 15a1 1 0 0 1-1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1-1 1z"></path>
-  </svg>
-);
 
 const IconMenu = () => (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -109,17 +80,17 @@ function App() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-amber-50 p-8 rounded-2xl shadow-sm border border-amber-200 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg">
-              <div className="bg-teal-100 text-teal-600 w-16 h-16 rounded-full flex items-center justify-center mb-6"><IconHome /></div>
+              <div className="bg-teal-100 text-teal-600 w-16 h-16 rounded-full flex items-center justify-center mb-6"><img src="../home.svg" alt="" className="h-8 w-8 text-teal-600" /></div>
               <h3 className="text-2xl font-semibold mb-3">Garde à domicile</h3>
               <p className="text-gray-600">Je m'installe chez vous pour maintenir les habitudes de votre animal dans son environnement familier. Idéal pour les animaux anxieux.</p>
             </div>
             <div className="bg-amber-50 p-8 rounded-2xl shadow-sm border border-amber-200 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg">
-              <div className="bg-teal-100 text-teal-600 w-16 h-16 rounded-full flex items-center justify-center mb-6"><IconCat /></div>
+              <div className="bg-teal-100 text-teal-600 w-16 h-16 rounded-full flex items-center justify-center mb-6"><img src="../cat.svg" alt="" className="h-8 w-8 text-teal-600"/></div>
               <h3 className="text-2xl font-semibold mb-3">Visites journalières</h3>
               <p className="text-gray-600">Une ou plusieurs visites par jour pour nourrir, jouer, câliner et nettoyer la litière de votre chat ou autre petit compagnon.</p>
             </div>
             <div className="bg-amber-50 p-8 rounded-2xl shadow-sm border border-amber-200 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg">
-              <div className="bg-teal-100 text-teal-600 w-16 h-16 rounded-full flex items-center justify-center mb-6"><IconDog /></div>
+              <div className="bg-teal-100 text-teal-600 w-16 h-16 rounded-full flex items-center justify-center mb-6"><img src="../dog.svg" alt="" className="h-8 w-8 text-teal-600" /></div>
               <h3 className="text-2xl font-semibold mb-3">Promenades de chiens</h3>
               <p className="text-gray-600">Des balades stimulantes et amusantes pour que votre chien puisse se dépenser et socialiser en toute sécurité.</p>
             </div>
