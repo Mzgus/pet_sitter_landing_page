@@ -219,16 +219,16 @@ function App() {
               Passionnée par les animaux avant tout
             </h2>
             <p className="mt-6 text-lg text-gray-600">
-              Bonjour, je m'appelle Ornella ! Depuis mon plus jeune âge, j'ai
-              toujours été entourée d'animaux. Cette passion m'a naturellement
-              conduite à vouloir en faire mon métier.
+              Bonjour, je m'appelle Ornella ! J'ai 20 ans et ma passion pour les
+              animaux remonte à mon enfance.
             </p>
-            <p className="mt-4 text-gray-600">
-              Formée aux premiers secours canins et félins, je mets un point
-              d'honneur à garantir la sécurité et le bien-être de chaque animal
-              qui m'est confié. Mon objectif est simple : offrir à vos
-              compagnons autant d'amour et d'attention que vous le feriez
-              vous-même.
+            <p className="mt-4 text-lg text-gray-600">
+              Depuis 4 ans j'ai la chance d'avoir mon propre chien et j'adore
+              m'occuper de ceux de mes proches. Je souhaite élargir mon cercle
+              et offrir mes services en tant que pet sitter.
+            </p>
+            <p className="mt-4 text-lg text-gray-600">
+                En plus de mes quelques années d'éxpériences, j'ai obtenu mon ACAED pour avoir un status officiel, car le bien-être de vos animaux est ma priorité.
             </p>
           </div>
         </div>
