@@ -299,7 +299,7 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-amber-50 p-8 rounded-xl shadow-sm">
               <p className="text-gray-600 italic">
-                "Ornella a été incroyable avec notre chien Max. Nous avons reçu
+                "Ornella a été incroyable avec notre chien Tao. Nous avons reçu
                 des photos tous les jours et l'avons retrouvé plus heureux que
                 jamais. Nous la recommandons les yeux fermés !"
               </p>
@@ -310,7 +310,7 @@ function App() {
                   className="w-12 h-12 rounded-full mr-4 object-cover"
                 />
                 <div>
-                  <p className="font-semibold text-gray-900">Sophie D.</p>
+                  <p className="font-semibold text-gray-900">Lauriane</p>
                   <p className="text-sm text-gray-500">
                     Propriétaire de Tao, Labrador
                   </p>
@@ -319,7 +319,7 @@ function App() {
             </div>
             <div className="bg-amber-50 p-8 rounded-xl shadow-sm">
               <p className="text-gray-600 italic">
-                "Très professionnelle et douce avec notre chatte Minette, qui
+                "Très professionnelle et douce avec notre chatte Poussy, qui
                 est pourtant très craintive. Un service de grande qualité, je
                 suis totalement rassurée quand je pars."
               </p>
@@ -330,9 +330,9 @@ function App() {
                   className="w-12 h-12 rounded-full mr-4 object-cover"
                 />
                 <div>
-                  <p className="font-semibold text-gray-900">Julien M.</p>
+                  <p className="font-semibold text-gray-900">Karine</p>
                   <p className="text-sm text-gray-500">
-                    Propriétaire de Poupous, Chat de gouttière
+                    Propriétaire de Poussy, Chat de gouttière
                   </p>
                 </div>
               </div>
@@ -350,9 +350,9 @@ function App() {
                   className="w-12 h-12 rounded-full mr-4 object-cover"
                 />
                 <div>
-                  <p className="font-semibold text-gray-900">Clara L.</p>
+                  <p className="font-semibold text-gray-900">Carine et Julien</p>
                   <p className="text-sm text-gray-500">
-                    Propriétaire de Savana, Berger Allemand
+                    Propriétaire de Savannah, Berger Allemand et Charlie, <br />Chiwawa
                   </p>
                 </div>
               </div>
@@ -467,12 +467,12 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="mt-12 text-center">
+        <div className="mt-8 flex justify-center md:justify-items-center gap-4">
           <a
             href="#contact" 
             className="bg-teal-500 text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-teal-600 transition-transform hover:scale-105 shadow-lg"
           >
-            Réserver une garde
+            Faire un devis !
           </a>
         </div>
       </section>
