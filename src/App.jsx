@@ -218,8 +218,7 @@ function App() {
                   Visites à domicile
                 </h3>
                 <p className="text-gray-600">
-                  Une ou plusieurs visites par jour pour nourrir, jouer, câliner
-                  et promener vos animaux. <br />
+                  Une ou plusieurs visites par jour pour nourrir, jouer, nettoyer et câliner vos animaux. <br />
                   Des visites de 20 minutes ou 40 minutes selon vos besoins.
                 </p>
               </div>
