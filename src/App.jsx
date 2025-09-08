@@ -19,6 +19,21 @@ const IconMenu = () => (
   </svg>
 );
 
+const CheckIcon = () => (
+  <svg
+    className="w-5 h-5 mr-2 text-teal-500 flex-shrink-0"
+    fill="currentColor"
+    viewBox="0 0 20 20"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      fillRule="evenodd"
+      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+      clipRule="evenodd"
+    ></path>
+  </svg>
+);
+
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -27,7 +42,6 @@ function App() {
   };
 
   return (
-    // <div className="bg-[#b36200]  text-gray-800 font-sans">
     <div className="bg-amber-50  text-gray-800 font-sans">
       {/* =========== Header / Barre de Navigation =========== */}
       <header className="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
@@ -53,6 +67,12 @@ function App() {
               className="text-gray-600 hover:text-teal-600 transition-colors"
             >
               Témoignages
+            </a>
+            <a
+              href="#tarifs"
+              className="text-gray-600 hover:text-teal-600 transition-colors"
+            >
+              Tarifs
             </a>
             <a
               href="#contact"
@@ -94,6 +114,13 @@ function App() {
             Témoignages
           </a>
           <a
+            href="#tarifs"
+            onClick={toggleMenu}
+            className="block py-2 text-gray-600 hover:text-teal-600"
+          >
+            Tarifs
+          </a>
+          <a
             href="#contact"
             onClick={toggleMenu}
             className="block mt-2 text-center bg-teal-500 text-white px-5 py-2 rounded-full hover:bg-teal-600"
@@ -103,7 +130,7 @@ function App() {
         </div>
       </header>
 
-      {/* =========== Section Principale (Hero) (MODIFIÉE) =========== */}
+      {/* =========== Section Principale (Hero) =========== */}
       <main className="container mx-auto px-6 py-16 md:py-24">
         <div className="flex flex-col md:flex-row items-center justify-center gap-12">
           <div className="md:w-1/2 text-center md:text-left">
@@ -156,11 +183,7 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-amber-50 p-8 rounded-2xl shadow-sm border border-amber-200 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg">
               <div className="bg-teal-100 text-teal-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                <img
-                  src="../cat.svg"
-                  alt=""
-                  className="h-8 w-8 text-teal-600"
-                />
+                <img src="/cat.svg" alt="" className="h-8 w-8 text-teal-600" />
               </div>
               <h3 className="text-2xl font-semibold mb-3">
                 Transport toilettage
@@ -172,11 +195,7 @@ function App() {
             </div>
             <div className="bg-amber-50 p-8 rounded-2xl shadow-sm border border-amber-200 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg">
               <div className="bg-teal-100 text-teal-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                <img
-                  src="../home.svg"
-                  alt=""
-                  className="h-8 w-8 text-teal-600"
-                />
+                <img src="/home.svg" alt="" className="h-8 w-8 text-teal-600" />
               </div>
               <h3 className="text-2xl font-semibold mb-3">
                 Visites à domicile
@@ -191,11 +210,7 @@ function App() {
             </div>
             <div className="bg-amber-50 p-8 rounded-2xl shadow-sm border border-amber-200 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg">
               <div className="bg-teal-100 text-teal-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                <img
-                  src="../dog.svg"
-                  alt=""
-                  className="h-8 w-8 text-teal-600"
-                />
+                <img src="/dog.svg" alt="" className="h-8 w-8 text-teal-600" />
               </div>
               <h3 className="text-2xl font-semibold mb-3">
                 Promenades de chiens
@@ -209,11 +224,7 @@ function App() {
             </div>
             <div className="bg-amber-50 p-8 rounded-2xl shadow-sm border border-amber-200 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg">
               <div className="bg-teal-100 text-teal-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                <img
-                  src="../dog.svg"
-                  alt=""
-                  className="h-8 w-8 text-teal-600"
-                />
+                <img src="/dog.svg" alt="" className="h-8 w-8 text-teal-600" />
               </div>
               <h3 className="text-2xl font-semibold mb-3">
                 Promenades de groupes
@@ -227,11 +238,7 @@ function App() {
             </div>
             <div className="bg-amber-50 p-8 rounded-2xl shadow-sm border border-amber-200 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg">
               <div className="bg-teal-100 text-teal-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                <img
-                  src="../cat.svg"
-                  alt=""
-                  className="h-8 w-8 text-teal-600"
-                />
+                <img src="/cat.svg" alt="" className="h-8 w-8 text-teal-600" />
               </div>
               <h3 className="text-2xl font-semibold mb-3">
                 Forfaits et abonnements
@@ -251,9 +258,9 @@ function App() {
         <div className="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-5/12">
             <img
-              src="../moi.jpeg"
+              src="/moi.jpeg"
               alt="Portrait de la pet sitter"
-              className="rounded-full shadow-xl w-100 max-w-sm mx-auto"
+              className="rounded-full shadow-xl w-full max-w-sm mx-auto"
             />
           </div>
           <div className="md:w-7/12 text-center md:text-left">
@@ -271,7 +278,7 @@ function App() {
             </p>
             <p className="mt-4 text-lg text-gray-600">
               En plus de mes quelques années d'éxpériences, j'ai obtenu mon
-              ACAED pour avoir un status officiel, car le bien-être de vos
+              ACACED pour avoir un statut officiel, car le bien-être de vos
               animaux est ma priorité.
             </p>
           </div>
@@ -298,14 +305,14 @@ function App() {
               </p>
               <div className="mt-4 flex items-center">
                 <img
-                  src="https://placehold.co/48x48/fde68a/333"
+                  src="/tao.png"
                   alt="Avatar client"
-                  className="w-12 h-12 rounded-full mr-4"
+                  className="w-12 h-12 rounded-full mr-4 object-cover"
                 />
                 <div>
                   <p className="font-semibold text-gray-900">Sophie D.</p>
                   <p className="text-sm text-gray-500">
-                    Propriétaire de Max, Golden Retriever
+                    Propriétaire de Tao, Labrador
                   </p>
                 </div>
               </div>
@@ -318,14 +325,14 @@ function App() {
               </p>
               <div className="mt-4 flex items-center">
                 <img
-                  src="https://placehold.co/48x48/fde68a/333"
+                  src="/poupous.jpeg"
                   alt="Avatar client"
-                  className="w-12 h-12 rounded-full mr-4"
+                  className="w-12 h-12 rounded-full mr-4 object-cover"
                 />
                 <div>
                   <p className="font-semibold text-gray-900">Julien M.</p>
                   <p className="text-sm text-gray-500">
-                    Propriétaire de Minette, Chat de gouttière
+                    Propriétaire de Poupous, Chat de gouttière
                   </p>
                 </div>
               </div>
@@ -333,19 +340,19 @@ function App() {
             <div className="bg-amber-50 p-8 rounded-xl shadow-sm">
               <p className="text-gray-600 italic">
                 "Les promenades sont le meilleur moment de la journée de mon
-                chienk, Ornella est fiable, ponctuelle et a une super connexion
+                chien, Ornella est fiable, ponctuelle et a une super connexion
                 avec les animaux. C'est un vrai soulagement."
               </p>
               <div className="mt-4 flex items-center">
                 <img
-                  src="https://placehold.co/48x48/fde68a/333"
+                  src="/savannah.jpeg"
                   alt="Avatar client"
-                  className="w-12 h-12 rounded-full mr-4"
+                  className="w-12 h-12 rounded-full mr-4 object-cover"
                 />
                 <div>
                   <p className="font-semibold text-gray-900">Clara L.</p>
                   <p className="text-sm text-gray-500">
-                    Propriétaire de Rocky, Beagle
+                    Propriétaire de Savana, Berger Allemand
                   </p>
                 </div>
               </div>
@@ -354,7 +361,123 @@ function App() {
         </div>
       </section>
 
-      {/* =========== Section Contact (MODIFIÉE) =========== */}
+      {/* =========== Section Tarifs (NOUVELLE) =========== */}
+      <section id="tarifs" className="py-20 md:py-28">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+              Mes Tarifs
+            </h2>
+            <p className="mt-4 text-gray-600 max-w-3xl mx-auto">
+              Voici une grille de mes tarifs de base. Pour toute demande
+              spécifique ou un devis personnalisé, n'hésitez pas à me contacter.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Carte Promenades */}
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 flex flex-col">
+              <h3 className="text-2xl font-semibold mb-4 text-teal-700">
+                Promenades
+              </h3>
+              <ul className="space-y-3 text-gray-700 flex-grow">
+                <li className="flex justify-between border-b pb-2">
+                  <span>20 minutes</span> <span className="font-bold">10€</span>
+                </li>
+                <li className="flex justify-between border-b pb-2">
+                  <span>40 minutes</span> <span className="font-bold">13€</span>
+                </li>
+                <li className="flex justify-between border-b pb-2">
+                  <span>1 heure</span> <span className="font-bold">15€</span>
+                </li>
+                <li className="flex justify-between">
+                  <span>1 heure 30</span> <span className="font-bold">18€</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Carte Visites */}
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 flex flex-col">
+              <h3 className="text-2xl font-semibold mb-4 text-teal-700">
+                Visites à domicile
+              </h3>
+              <div className="flex-grow space-y-4">
+                <div>
+                  <h4 className="font-bold text-gray-800">
+                    Visites de 20 minutes
+                  </h4>
+                  <ul className="space-y-2 text-gray-700 mt-2">
+                    <li className="flex justify-between border-b pb-1">
+                      <span>1 par jour</span>{" "}
+                      <span className="font-bold">12€</span>
+                    </li>
+                    <li className="flex justify-between border-b pb-1">
+                      <span>2 par jour</span>{" "}
+                      <span className="font-bold">18€</span>
+                    </li>
+                    <li className="flex justify-between">
+                      <span>3 par jour</span>{" "}
+                      <span className="font-bold">23€</span>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-bold text-gray-800">
+                    Visites de 40 minutes
+                  </h4>
+                  <ul className="space-y-2 text-gray-700 mt-2">
+                    <li className="flex justify-between border-b pb-1">
+                      <span>1 par jour</span>{" "}
+                      <span className="font-bold">16€</span>
+                    </li>
+                    <li className="flex justify-between border-b pb-1">
+                      <span>2 par jour</span>{" "}
+                      <span className="font-bold">21€</span>
+                    </li>
+                    <li className="flex justify-between">
+                      <span>3 par jour</span>{" "}
+                      <span className="font-bold">26€</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Carte Autres Services */}
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 flex flex-col">
+              <h3 className="text-2xl font-semibold mb-4 text-teal-700">
+                Autres Prestations
+              </h3>
+              <div className="flex-grow space-y-4 text-gray-700">
+                <div>
+                  <h4 className="font-bold text-gray-800">Forfait Balades</h4>
+                  {/* <p className="flex justify-between"><span>10x 1 heure (sur 10 sem.)</span> <span className="font-bold">135€</span></p> */}
+                  <p className="flex justify-between">
+                    <span>
+                      Forfait personnalisé sur demande (ex : 10x 1h pour 10
+                      semaines)
+                    </span>
+                  </p>
+                </div>
+                <div className="border-t pt-4">
+                  <h4 className="font-bold text-gray-800">Transport</h4>
+                  <p>Transport chez le vétérinaire ou le toiletteur.</p>
+                  <p className="font-semibold mt-1">Ex: 10€ pour 10km A/R</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="mt-12 text-center">
+          <a
+            href="#contact" 
+            className="bg-teal-500 text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-teal-600 transition-transform hover:scale-105 shadow-lg"
+          >
+            Réserver une garde
+          </a>
+        </div>
+      </section>
+
+      {/* =========== Section Contact =========== */}
       <section id="contact" className="bg-teal-600 text-white py-20 md:py-28">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold">
@@ -365,10 +488,7 @@ function App() {
             obtenir un devis personnalisé. Une première rencontre est toujours
             offerte !
           </p>
-
-          {/* Conteneur principal pour les méthodes de contact */}
           <div className="mt-12 flex flex-col items-center gap-8">
-            {/* Bloc Réseaux Sociaux */}
             <div className="w-full">
               <p className="text-teal-200 mb-6 font-semibold">
                 Retrouvez-moi sur les réseaux :
@@ -377,6 +497,7 @@ function App() {
                 <li data-tooltip="Facebook" style={{ "--bg": "#3a83f7" }}>
                   <a
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="shadow-lg"
                     href="https://www.facebook.com/profile.php?id=61579984778894&locale=fr_FR"
                     aria-label="Facebook"
@@ -393,6 +514,7 @@ function App() {
                 >
                   <a
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="shadow-lg"
                     href="https://www.instagram.com/petsitter_ornella?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                     aria-label="Instagram"
@@ -402,8 +524,6 @@ function App() {
                 </li>
               </ul>
             </div>
-
-            {/* Séparateur */}
             <div className="flex items-center w-full max-w-xs">
               <div className="flex-grow border-t border-teal-500"></div>
               <span className="flex-shrink mx-4 text-teal-200 font-bold">
@@ -411,11 +531,10 @@ function App() {
               </span>
               <div className="flex-grow border-t border-teal-500"></div>
             </div>
-
-            {/* Bloc Email */}
             <div className="w-full">
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 href="mailto:o.prevostat@gmail.com"
                 className="bg-white text-teal-600 px-10 py-4 rounded-full font-bold text-lg hover:bg-amber-50 transition-transform hover:scale-105 shadow-lg inline-block"
               >
