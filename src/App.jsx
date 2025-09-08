@@ -27,8 +27,8 @@ function App() {
   };
 
   return (
-    <div className="bg-amber-100  text-gray-800 font-sans">
-    {/* </div><div className="bg-amber-100  text-gray-800 font-sans"> */}
+    // <div className="bg-[#b36200]  text-gray-800 font-sans">
+    <div className="bg-amber-50  text-gray-800 font-sans">
       {/* =========== Header / Barre de Navigation =========== */}
       <header className="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
         <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
@@ -154,22 +154,7 @@ function App() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-amber-100 p-8 rounded-2xl shadow-sm border border-amber-200 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg">
-              <div className="bg-teal-100 text-teal-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                <img
-                  src="../home.svg"
-                  alt=""
-                  className="h-8 w-8 text-teal-600"
-                />
-              </div>
-              <h3 className="text-2xl font-semibold mb-3">Garde à domicile</h3>
-              <p className="text-gray-600">
-                Je m'installe chez vous pour maintenir les habitudes de votre
-                animal dans son environnement familier. Idéal pour les animaux
-                anxieux.
-              </p>
-            </div>
-            <div className="bg-amber-100 p-8 rounded-2xl shadow-sm border border-amber-200 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg">
+            <div className="bg-amber-50 p-8 rounded-2xl shadow-sm border border-amber-200 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg">
               <div className="bg-teal-100 text-teal-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
                 <img
                   src="../cat.svg"
@@ -178,14 +163,33 @@ function App() {
                 />
               </div>
               <h3 className="text-2xl font-semibold mb-3">
-                Visites journalières
+                Transport toilettage
+              </h3>
+              <p className="text-gray-600">
+                Je m'occupe de tranporter vos animaux chez le toiletteur pour
+                vous faciliter la vie.
+              </p>
+            </div>
+            <div className="bg-amber-50 p-8 rounded-2xl shadow-sm border border-amber-200 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg">
+              <div className="bg-teal-100 text-teal-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                <img
+                  src="../home.svg"
+                  alt=""
+                  className="h-8 w-8 text-teal-600"
+                />
+              </div>
+              <h3 className="text-2xl font-semibold mb-3">
+                Visites à domicile
               </h3>
               <p className="text-gray-600">
                 Une ou plusieurs visites par jour pour nourrir, jouer, câliner
-                et nettoyer la litière de votre chat ou autre petit compagnon.
+                et promenez vos animaux. <br />
+                Des visites de 20 minutes ou 40 minutes selon vos besoins.{" "}
+                <br />
+                Ainsi qu'optionnellement des balades.
               </p>
             </div>
-            <div className="bg-amber-100 p-8 rounded-2xl shadow-sm border border-amber-200 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg">
+            <div className="bg-amber-50 p-8 rounded-2xl shadow-sm border border-amber-200 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg">
               <div className="bg-teal-100 text-teal-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
                 <img
                   src="../dog.svg"
@@ -198,7 +202,44 @@ function App() {
               </h3>
               <p className="text-gray-600">
                 Des balades stimulantes et amusantes pour que votre chien puisse
-                se dépenser et socialiser en toute sécurité.
+                se dépenser et socialiser en toute sécurité. <br />
+                Des promenades de 20 / 40 / 1 heure / 1 heure 30 selon vos
+                besoins.
+              </p>
+            </div>
+            <div className="bg-amber-50 p-8 rounded-2xl shadow-sm border border-amber-200 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg">
+              <div className="bg-teal-100 text-teal-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                <img
+                  src="../dog.svg"
+                  alt=""
+                  className="h-8 w-8 text-teal-600"
+                />
+              </div>
+              <h3 className="text-2xl font-semibold mb-3">
+                Promenades de groupes
+              </h3>
+              <p className="text-gray-600">
+                Des balades en petits groupes pour que votre chien puisse se
+                dépenser et socialiser en toute sécurité. <br />
+                Pour assurer une bonne entente entre les chiens nous pouvons
+                organiser une première rencontre.
+              </p>
+            </div>
+            <div className="bg-amber-50 p-8 rounded-2xl shadow-sm border border-amber-200 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg">
+              <div className="bg-teal-100 text-teal-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                <img
+                  src="../cat.svg"
+                  alt=""
+                  className="h-8 w-8 text-teal-600"
+                />
+              </div>
+              <h3 className="text-2xl font-semibold mb-3">
+                Forfaits et abonnements
+              </h3>
+              <p className="text-gray-600">
+                Je vous propose des forfaits adaptés à vos besoins pour des
+                promenades régulières à tarif avantageux. (ex : 10 promenades de
+                1 heure, durant 10 semaines)
               </p>
             </div>
           </div>
@@ -249,7 +290,7 @@ function App() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-amber-100 p-8 rounded-xl shadow-sm">
+            <div className="bg-amber-50 p-8 rounded-xl shadow-sm">
               <p className="text-gray-600 italic">
                 "Ornella a été incroyable avec notre chien Max. Nous avons reçu
                 des photos tous les jours et l'avons retrouvé plus heureux que
@@ -269,7 +310,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="bg-amber-100 p-8 rounded-xl shadow-sm">
+            <div className="bg-amber-50 p-8 rounded-xl shadow-sm">
               <p className="text-gray-600 italic">
                 "Très professionnelle et douce avec notre chatte Minette, qui
                 est pourtant très craintive. Un service de grande qualité, je
@@ -289,7 +330,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="bg-amber-100 p-8 rounded-xl shadow-sm">
+            <div className="bg-amber-50 p-8 rounded-xl shadow-sm">
               <p className="text-gray-600 italic">
                 "Les promenades sont le meilleur moment de la journée de mon
                 chienk, Ornella est fiable, ponctuelle et a une super connexion
@@ -376,7 +417,7 @@ function App() {
               <a
                 target="_blank"
                 href="mailto:o.prevostat@gmail.com"
-                className="bg-white text-teal-600 px-10 py-4 rounded-full font-bold text-lg hover:bg-amber-100 transition-transform hover:scale-105 shadow-lg inline-block"
+                className="bg-white text-teal-600 px-10 py-4 rounded-full font-bold text-lg hover:bg-amber-50 transition-transform hover:scale-105 shadow-lg inline-block"
               >
                 Envoyer un mail
               </a>
