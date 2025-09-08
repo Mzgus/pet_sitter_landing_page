@@ -244,7 +244,7 @@ function App() {
                 <p className="text-gray-600">
                   Des balades stimulantes et amusantes pour que votre chien
                   puisse se dépenser et socialiser en toute sécurité. <br />
-                  Des promenades de 20 / 40 / 1 heure / 1 heure 30 selon vos
+                  Des promenades de 20/40/1 heure/1 heure 30 selon vos
                   besoins.
                 </p>
               </div>
@@ -334,8 +334,8 @@ function App() {
               et offrir mes services en tant que pet sitter.
             </p>
             <p className="mt-4 text-lg text-gray-600">
-              En plus de mes quelques années d'éxpériences, j'ai obtenu mon
-              ACACED pour avoir un statut officiel, car le bien-être de vos
+              En plus de mes quelques années d'éxpériences, je vais passer mon
+              ACACED en septembre pour avoir un statut officiel, car le bien-être de vos
               animaux est ma priorité.
             </p>
           </div>
