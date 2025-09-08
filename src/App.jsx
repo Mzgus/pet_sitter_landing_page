@@ -181,73 +181,131 @@ function App() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-amber-50 p-8 rounded-2xl shadow-sm border border-amber-200 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg">
-              <div className="bg-teal-100 text-teal-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                <img src="/cat.svg" alt="" className="h-8 w-8 text-teal-600" />
+            <div className="bg-amber-50 p-8 rounded-2xl shadow-sm border border-amber-200 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg flex flex-col">
+              <div className="flex-grow">
+                <div className="bg-teal-100 text-teal-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                  <img
+                    src="/cat.svg"
+                    alt=""
+                    className="h-8 w-8 text-teal-600"
+                  />
+                </div>
+                <h3 className="text-2xl font-semibold mb-3">
+                  Transport toilettage
+                </h3>
+                <p className="text-gray-600">
+                  Je m'occupe de transporter vos animaux chez le toiletteur pour
+                  vous faciliter la vie.
+                </p>
               </div>
-              <h3 className="text-2xl font-semibold mb-3">
-                Transport toilettage
-              </h3>
-              <p className="text-gray-600">
-                Je m'occupe de tranporter vos animaux chez le toiletteur pour
-                vous faciliter la vie.
-              </p>
+              <a
+                href="#tarifs"
+                className="mt-6 font-semibold text-teal-600 hover:text-teal-800 transition-colors self-start"
+              >
+                Consulter les tarifs →
+              </a>
             </div>
-            <div className="bg-amber-50 p-8 rounded-2xl shadow-sm border border-amber-200 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg">
-              <div className="bg-teal-100 text-teal-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                <img src="/home.svg" alt="" className="h-8 w-8 text-teal-600" />
+            <div className="bg-amber-50 p-8 rounded-2xl shadow-sm border border-amber-200 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg flex flex-col">
+              <div className="flex-grow">
+                <div className="bg-teal-100 text-teal-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                  <img
+                    src="/home.svg"
+                    alt=""
+                    className="h-8 w-8 text-teal-600"
+                  />
+                </div>
+                <h3 className="text-2xl font-semibold mb-3">
+                  Visites à domicile
+                </h3>
+                <p className="text-gray-600">
+                  Une ou plusieurs visites par jour pour nourrir, jouer, câliner
+                  et promener vos animaux. <br />
+                  Des visites de 20 minutes ou 40 minutes selon vos besoins.
+                </p>
               </div>
-              <h3 className="text-2xl font-semibold mb-3">
-                Visites à domicile
-              </h3>
-              <p className="text-gray-600">
-                Une ou plusieurs visites par jour pour nourrir, jouer, câliner
-                et promenez vos animaux. <br />
-                Des visites de 20 minutes ou 40 minutes selon vos besoins.{" "}
-                <br />
-                Ainsi qu'optionnellement des balades.
-              </p>
+              <a
+                href="#tarifs"
+                className="mt-6 font-semibold text-teal-600 hover:text-teal-800 transition-colors self-start"
+              >
+                Consulter les tarifs →
+              </a>
             </div>
-            <div className="bg-amber-50 p-8 rounded-2xl shadow-sm border border-amber-200 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg">
-              <div className="bg-teal-100 text-teal-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                <img src="/dog.svg" alt="" className="h-8 w-8 text-teal-600" />
+            <div className="bg-amber-50 p-8 rounded-2xl shadow-sm border border-amber-200 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg flex flex-col">
+              <div className="flex-grow">
+                <div className="bg-teal-100 text-teal-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                  <img
+                    src="/dog.svg"
+                    alt=""
+                    className="h-8 w-8 text-teal-600"
+                  />
+                </div>
+                <h3 className="text-2xl font-semibold mb-3">
+                  Promenades de chiens
+                </h3>
+                <p className="text-gray-600">
+                  Des balades stimulantes et amusantes pour que votre chien
+                  puisse se dépenser et socialiser en toute sécurité. <br />
+                  Des promenades de 20 / 40 / 1 heure / 1 heure 30 selon vos
+                  besoins.
+                </p>
               </div>
-              <h3 className="text-2xl font-semibold mb-3">
-                Promenades de chiens
-              </h3>
-              <p className="text-gray-600">
-                Des balades stimulantes et amusantes pour que votre chien puisse
-                se dépenser et socialiser en toute sécurité. <br />
-                Des promenades de 20 / 40 / 1 heure / 1 heure 30 selon vos
-                besoins.
-              </p>
+              <a
+                href="#tarifs"
+                className="mt-6 font-semibold text-teal-600 hover:text-teal-800 transition-colors self-start"
+              >
+                Consulter les tarifs →
+              </a>
             </div>
-            <div className="bg-amber-50 p-8 rounded-2xl shadow-sm border border-amber-200 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg">
-              <div className="bg-teal-100 text-teal-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                <img src="/dog.svg" alt="" className="h-8 w-8 text-teal-600" />
+            <div className="bg-amber-50 p-8 rounded-2xl shadow-sm border border-amber-200 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg flex flex-col">
+              <div className="flex-grow">
+                <div className="bg-teal-100 text-teal-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                  <img
+                    src="/dog.svg"
+                    alt=""
+                    className="h-8 w-8 text-teal-600"
+                  />
+                </div>
+                <h3 className="text-2xl font-semibold mb-3">
+                  Promenades de groupes
+                </h3>
+                <p className="text-gray-600">
+                  Des balades en petits groupes pour que votre chien puisse se
+                  dépenser et socialiser en toute sécurité. <br />
+                  Pour assurer une bonne entente, une première rencontre est
+                  organisée.
+                </p>
               </div>
-              <h3 className="text-2xl font-semibold mb-3">
-                Promenades de groupes
-              </h3>
-              <p className="text-gray-600">
-                Des balades en petits groupes pour que votre chien puisse se
-                dépenser et socialiser en toute sécurité. <br />
-                Pour assurer une bonne entente entre les chiens nous pouvons
-                organiser une première rencontre.
-              </p>
+              <a
+                href="#tarifs"
+                className="mt-6 font-semibold text-teal-600 hover:text-teal-800 transition-colors self-start"
+              >
+                Consulter les tarifs →
+              </a>
             </div>
-            <div className="bg-amber-50 p-8 rounded-2xl shadow-sm border border-amber-200 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg">
-              <div className="bg-teal-100 text-teal-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                <img src="/cat.svg" alt="" className="h-8 w-8 text-teal-600" />
+            <div className="bg-amber-50 p-8 rounded-2xl shadow-sm border border-amber-200 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg flex flex-col">
+              <div className="flex-grow">
+                <div className="bg-teal-100 text-teal-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                  <img
+                    src="/cat.svg"
+                    alt=""
+                    className="h-8 w-8 text-teal-600"
+                  />
+                </div>
+                <h3 className="text-2xl font-semibold mb-3">
+                  Forfaits et abonnements
+                </h3>
+                <p className="text-gray-600">
+                  Je vous propose des forfaits adaptés à vos besoins pour des
+                  promenades régulières à tarif avantageux. (ex : 10 promenades
+                  de 1 heure)
+                </p>
               </div>
-              <h3 className="text-2xl font-semibold mb-3">
-                Forfaits et abonnements
-              </h3>
-              <p className="text-gray-600">
-                Je vous propose des forfaits adaptés à vos besoins pour des
-                promenades régulières à tarif avantageux. (ex : 10 promenades de
-                1 heure, durant 10 semaines)
-              </p>
+              <a
+                href="#tarifs"
+                className="mt-6 font-semibold text-teal-600 hover:text-teal-800 transition-colors self-start"
+              >
+                Consulter les tarifs →
+              </a>
             </div>
           </div>
         </div>
@@ -319,9 +377,9 @@ function App() {
             </div>
             <div className="bg-amber-50 p-8 rounded-xl shadow-sm">
               <p className="text-gray-600 italic">
-                "Très professionnelle et douce avec notre chatte Poussy, qui
-                est pourtant très craintive. Un service de grande qualité, je
-                suis totalement rassurée quand je pars."
+                "Très professionnelle et douce avec notre chatte Poussy, qui est
+                pourtant très craintive. Un service de grande qualité, je suis
+                totalement rassurée quand je pars."
               </p>
               <div className="mt-4 flex items-center">
                 <img
@@ -339,9 +397,17 @@ function App() {
             </div>
             <div className="bg-amber-50 p-8 rounded-xl shadow-sm">
               <p className="text-gray-600 italic">
-                "Les promenades sont le meilleur moment de la journée de mon
-                chien, Ornella est fiable, ponctuelle et a une super connexion
-                avec les animaux. C'est un vrai soulagement."
+                "J’ai confié mes deux chiennes, Charlie (chihuahua) et Savannah
+                (berger allemand), à Ornella et je ne pouvais pas espérer
+                meilleure expérience ! Elle a été aux petits soins avec elles,
+                attentive aussi bien aux besoins de la petite qu’à ceux de la
+                grande. On sent tout de suite qu’elle aime vraiment les animaux
+                et qu’elle sait s’adapter à leur caractère. J’ai eu des
+                nouvelles régulièrement, ce qui m’a permis d’être totalement
+                rassuré. Mes chiennes sont revenues heureuses et détendues. Je
+                recommande vivement Ornella à tous ceux qui cherchent une
+                personne de confiance pour garder leurs compagnons
+                à quatre pattes !"
               </p>
               <div className="mt-4 flex items-center">
                 <img
@@ -350,9 +416,12 @@ function App() {
                   className="w-12 h-12 rounded-full mr-4 object-cover"
                 />
                 <div>
-                  <p className="font-semibold text-gray-900">Carine et Julien</p>
+                  <p className="font-semibold text-gray-900">
+                    Carine et Julien
+                  </p>
                   <p className="text-sm text-gray-500">
-                    Propriétaire de Savannah, Berger Allemand et Charlie, <br />Chiwawa
+                    Propriétaire de Savannah, Berger Allemand et Charlie, <br />
+                    Chiwawa
                   </p>
                 </div>
               </div>
@@ -469,7 +538,7 @@ function App() {
         </div>
         <div className="mt-8 flex justify-center md:justify-items-center gap-4">
           <a
-            href="#contact" 
+            href="#contact"
             className="bg-teal-500 text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-teal-600 transition-transform hover:scale-105 shadow-lg"
           >
             Faire un devis !
