@@ -207,6 +207,20 @@ function App() {
                 Consulter les tarifs →
               </a>
             </div>
+            <div className="bg-yellow-50 p-8 rounded-2xl shadow-sm border border-yellow-200 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg flex flex-col">
+              <div className="flex-grow">
+                <div className="bg-amber-100 text-amber-800 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                  <img src="/home.svg" alt="" className="h-8 w-8"/>
+                </div>
+                <h3 className="text-2xl font-semibold mb-3">Garde nuit à mon domicile</h3>
+                <p className="text-stone-700">
+                  Je peux accueillir votre animal chez moi pour une garde en toute sécurité et dans un environnement familial.
+                </p>
+              </div>
+              <a href="#tarifs" className="mt-6 font-semibold text-amber-800 hover:text-amber-900 transition-colors self-start">
+                Consulter les tarifs →
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -411,14 +425,19 @@ function App() {
                   <p className="flex justify-between">
                     <span>
                       Forfait personnalisé sur demande (ex : 10x 1h pour 10
-                      semaines)
+                      semaines 135€)
                     </span>
                   </p>
                 </div>
                 <div className="border-t pt-4">
                   <h4 className="font-bold text-stone-800">Transport</h4>
-                  <p>Vétérinaire ou toiletteur.</p>
+                  <p>Toiletteur.</p>
                   <p className="font-semibold mt-1">Ex: 10€ pour 10km A/R</p>
+                </div>
+                <div className="border-t pt-4">
+                  <h4 className="font-bold text-stone-800">Garde nuit à mon domicile</h4>
+                  <p className="font-semibold mt-1">30€ petit/moyen chien</p>
+                  <p className="font-semibold mt-1">35€ grand chien</p>
                 </div>
               </div>
             </div>
