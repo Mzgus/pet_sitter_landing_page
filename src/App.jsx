@@ -212,7 +212,7 @@ function App() {
                 <div className="bg-amber-100 text-amber-800 w-16 h-16 rounded-full flex items-center justify-center mb-6">
                   <img src="/home.svg" alt="" className="h-8 w-8"/>
                 </div>
-                <h3 className="text-2xl font-semibold mb-3">Garde nuit à mon domicile</h3>
+                <h3 className="text-2xl font-semibold mb-3">Garde nuits à mon domicile</h3>
                 <p className="text-stone-700">
                   Je peux accueillir votre animal chez moi pour une garde en toute sécurité et dans un environnement familial.
                 </p>
@@ -435,7 +435,7 @@ function App() {
                   <p className="font-semibold mt-1">Ex: 10€ pour 10km A/R</p>
                 </div>
                 <div className="border-t pt-4">
-                  <h4 className="font-bold text-stone-800">Garde nuit à mon domicile</h4>
+                  <h4 className="font-bold text-stone-800">Garde nuits à mon domicile</h4>
                   <p className="font-semibold mt-1">30€ petit/moyen chien</p>
                   <p className="font-semibold mt-1">35€ grand chien</p>
                 </div>
