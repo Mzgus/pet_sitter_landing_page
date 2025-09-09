@@ -436,8 +436,8 @@ function App() {
                 </div>
                 <div className="border-t pt-4">
                   <h4 className="font-bold text-stone-800">Garde nuits à mon domicile</h4>
-                  <p className="font-semibold mt-1">30€ petit/moyen chien</p>
-                  <p className="font-semibold mt-1">35€ grand chien</p>
+                  <p className="font-semibold mt-1">30€ petit/moyen chien par nuit</p>
+                  <p className="font-semibold mt-1">35€ grand chien par nuit</p>
                 </div>
               </div>
             </div>
