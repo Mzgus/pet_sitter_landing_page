@@ -214,7 +214,7 @@ function App() {
                 </div>
                 <h3 className="text-2xl font-semibold mb-3">Garde nuits à mon domicile</h3>
                 <p className="text-stone-700">
-                  Je peux accueillir votre animal chez moi pour une garde en toute sécurité et dans un environnement familial.
+                  Je peux accueillir votre animal chez moi pour une garde et promenades en toute sécurité et dans un environnement familial.
                 </p>
               </div>
               <a href="#tarifs" className="mt-6 font-semibold text-amber-800 hover:text-amber-900 transition-colors self-start">
