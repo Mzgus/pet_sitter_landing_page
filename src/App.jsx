@@ -41,6 +41,19 @@ function App() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const villes = ['Penchard', 'Crégy-Lès-Meaux', 'Meaux', 'Chambry', 'Chauconin', 'Villenoy', 'Varredes', 'Marcilly', 'Poincy', 'Nanteuil-Lès-Meaux' ,'Mareuil-lès-Meaux', 'Charny', 'Esbly', 'Jablines', 'Poincy', 'Villeroy', 'Triport'];
+
+  const renderVilles = () => {
+    return villes.map((ville, index) => (
+      <span
+        key={index}
+        className="bg-yellow-100 text-amber-800 font-semibold px-4 py-2 rounded-full"
+      >
+        {ville}
+      </span>
+    ));
+  }
+
   return (
     <div className="bg-yellow-50 text-stone-900 font-sans">
       {/* =========== Header / Barre de Navigation =========== */}
@@ -50,22 +63,40 @@ function App() {
             🐾 Petsitter Ornella
           </a>
           <div className="hidden md:flex space-x-8 items-center">
-            <a href="#services" className="text-stone-600 hover:text-amber-800 transition-colors">
+            <a
+              href="#services"
+              className="text-stone-600 hover:text-amber-800 transition-colors"
+            >
               Services
             </a>
-            <a href="#a-propos" className="text-stone-600 hover:text-amber-800 transition-colors">
+            <a
+              href="#a-propos"
+              className="text-stone-600 hover:text-amber-800 transition-colors"
+            >
               À Propos
             </a>
-            <a href="#temoignages" className="text-stone-600 hover:text-amber-800 transition-colors">
+            <a
+              href="#temoignages"
+              className="text-stone-600 hover:text-amber-800 transition-colors"
+            >
               Témoignages
             </a>
-            <a href="#tarifs" className="text-stone-600 hover:text-amber-800 transition-colors">
+            <a
+              href="#tarifs"
+              className="text-stone-600 hover:text-amber-800 transition-colors"
+            >
               Tarifs
             </a>
-             <a href="#zone" className="text-stone-600 hover:text-amber-800 transition-colors">
+            <a
+              href="#zone"
+              className="text-stone-600 hover:text-amber-800 transition-colors"
+            >
               Zone
             </a>
-            <a href="#contact" className="bg-amber-700 text-white px-5 py-2 rounded-full hover:bg-amber-800 transition-transform hover:scale-105 shadow-md">
+            <a
+              href="#contact"
+              className="bg-amber-700 text-white px-5 py-2 rounded-full hover:bg-amber-800 transition-transform hover:scale-105 shadow-md"
+            >
               Contactez-moi
             </a>
           </div>
@@ -73,23 +104,51 @@ function App() {
             <IconMenu />
           </button>
         </nav>
-        <div className={`${isMenuOpen ? "block" : "hidden"} md:hidden bg-white px-6 pb-4`}>
-          <a href="#services" onClick={toggleMenu} className="block py-2 text-stone-600 hover:text-amber-800">
+        <div
+          className={`${
+            isMenuOpen ? "block" : "hidden"
+          } md:hidden bg-white px-6 pb-4`}
+        >
+          <a
+            href="#services"
+            onClick={toggleMenu}
+            className="block py-2 text-stone-600 hover:text-amber-800"
+          >
             Services
           </a>
-          <a href="#a-propos" onClick={toggleMenu} className="block py-2 text-stone-600 hover:text-amber-800">
+          <a
+            href="#a-propos"
+            onClick={toggleMenu}
+            className="block py-2 text-stone-600 hover:text-amber-800"
+          >
             À Propos
           </a>
-          <a href="#temoignages" onClick={toggleMenu} className="block py-2 text-stone-600 hover:text-amber-800">
+          <a
+            href="#temoignages"
+            onClick={toggleMenu}
+            className="block py-2 text-stone-600 hover:text-amber-800"
+          >
             Témoignages
           </a>
-          <a href="#tarifs" onClick={toggleMenu} className="block py-2 text-stone-600 hover:text-amber-800">
+          <a
+            href="#tarifs"
+            onClick={toggleMenu}
+            className="block py-2 text-stone-600 hover:text-amber-800"
+          >
             Tarifs
           </a>
-          <a href="#zone" onClick={toggleMenu} className="block py-2 text-stone-600 hover:text-amber-800">
+          <a
+            href="#zone"
+            onClick={toggleMenu}
+            className="block py-2 text-stone-600 hover:text-amber-800"
+          >
             Zone
           </a>
-          <a href="#contact" onClick={toggleMenu} className="block mt-2 text-center bg-amber-700 text-white px-5 py-2 rounded-full hover:bg-amber-800">
+          <a
+            href="#contact"
+            onClick={toggleMenu}
+            className="block mt-2 text-center bg-amber-700 text-white px-5 py-2 rounded-full hover:bg-amber-800"
+          >
             Contactez-moi
           </a>
         </div>
@@ -109,10 +168,16 @@ function App() {
               l'esprit tranquille, je m'occupe de tout !
             </p>
             <div className="mt-8 flex justify-center md:justify-start gap-4">
-              <a href="#contact" className="bg-amber-700 text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-amber-800 transition-transform hover:scale-105 shadow-lg">
+              <a
+                href="#contact"
+                className="bg-amber-700 text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-amber-800 transition-transform hover:scale-105 shadow-lg"
+              >
                 Réserver une garde
               </a>
-              <a href="#services" className="bg-white text-amber-800 border border-amber-700 px-8 py-3 rounded-full font-semibold text-lg hover:bg-yellow-50 transition">
+              <a
+                href="#services"
+                className="bg-white text-amber-800 border border-amber-700 px-8 py-3 rounded-full font-semibold text-lg hover:bg-yellow-50 transition"
+              >
                 Voir les services
               </a>
             </div>
@@ -315,9 +380,7 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-yellow-50 p-8 rounded-xl shadow-sm">
               <p className="text-stone-700 italic">
-                "Ornella a été incroyable avec notre chien Tao. Nous avons reçu
-                des photos tous les jours et l'avons retrouvé plus heureux que
-                jamais. Nous la recommandons les yeux fermés !"
+                "Ornella est une pet-sitter absolument géniale ! J’ai eu des nouvelles et des photos de Tao tous les jours, ce qui a été très rassurant. Tao a été accueilli chez elle, avec sa chienne, et ils se sont entendus à merveille. Entre les belles balades, les jeux et les câlins, il a passé un séjour parfait. On sent tout de suite qu’elle adore les animaux et qu’ils sont chouchoutés comme à la maison. Je la recommande les yeux fermés !"
               </p>
               <div className="mt-4 flex items-center">
                 <img
@@ -519,37 +582,26 @@ function App() {
       {/* =========== Section Zone d'intervention (NOUVELLE) =========== */}
       <section id="zone" className="bg-white py-20 md:py-28">
         <div className="container mx-auto px-6 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-stone-900">
-              Zone d'intervention
-            </h2>
-            <p className="mt-4 text-stone-700 max-w-2xl mx-auto">
-              Je me déplace sans frais supplémentaires dans les villes suivantes et leurs alentours proches :
-            </p>
-            <div id="villes-container" className="mt-8 flex flex-wrap justify-center gap-x-4 gap-y-2">
-                <span className="bg-yellow-100 text-amber-800 font-semibold px-4 py-2 rounded-full">Couilly-Pont-aux-Dames</span>
-                <span className="bg-yellow-100 text-amber-800 font-semibold px-4 py-2 rounded-full">Quincy-Voisins</span>
-                <span className="bg-yellow-100 text-amber-800 font-semibold px-4 py-2 rounded-full">Esbly</span>
-                <span className="bg-yellow-100 text-amber-800 font-semibold px-4 py-2 rounded-full">Crécy-la-Chapelle</span>
-                <span className="bg-yellow-100 text-amber-800 font-semibold px-4 py-2 rounded-full">Mareuil-lès-Meaux</span>
-                <span className="bg-yellow-100 text-amber-800 font-semibold px-4 py-2 rounded-full">Couilly-Pont-aux-Dames</span>
-                <span className="bg-yellow-100 text-amber-800 font-semibold px-4 py-2 rounded-full">Quincy-Voisins</span>
-                <span className="bg-yellow-100 text-amber-800 font-semibold px-4 py-2 rounded-full">Esbly</span>
-                <span className="bg-yellow-100 text-amber-800 font-semibold px-4 py-2 rounded-full">Crécy-la-Chapelle</span>
-                <span className="bg-yellow-100 text-amber-800 font-semibold px-4 py-2 rounded-full">Mareuil-lès-Meaux</span>
-                <span className="bg-yellow-100 text-amber-800 font-semibold px-4 py-2 rounded-full">Couilly-Pont-aux-Dames</span>
-                <span className="bg-yellow-100 text-amber-800 font-semibold px-4 py-2 rounded-full">Quincy-Voisins</span>
-                <span className="bg-yellow-100 text-amber-800 font-semibold px-4 py-2 rounded-full">Esbly</span>
-                <span className="bg-yellow-100 text-amber-800 font-semibold px-4 py-2 rounded-full">Crécy-la-Chapelle</span>
-                <span className="bg-yellow-100 text-amber-800 font-semibold px-4 py-2 rounded-full">Mareuil-lès-Meaux</span>
-                <span className="bg-yellow-100 text-amber-800 font-semibold px-4 py-2 rounded-full">Crécy-la-Chapelle</span>
-                <span className="bg-yellow-100 text-amber-800 font-semibold px-4 py-2 rounded-full">Mareuil-lès-Meaux</span>
-            </div>
-            <p className="mt-6 text-stone-600 italic">
-                Pour toute autre ville, un supplément de 5€ sera appliqué pour le déplacement.
-            </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-stone-900">
+            Zone d'intervention
+          </h2>
+          <p className="mt-4 text-stone-700 max-w-2xl mx-auto">
+            Je me déplace sans frais supplémentaires dans les villes suivantes
+            et leurs alentours proches :
+          </p>
+          <div
+            id="villes-container"
+            className="mt-8 flex flex-wrap justify-center gap-x-4 gap-y-2"
+          >
+            {renderVilles()}
+          </div>
+          <p className="mt-6 text-stone-600 italic">
+            Pour toute autre ville, un supplément de 5€ sera appliqué pour le
+            déplacement.
+          </p>
         </div>
       </section>
-      
+
       {/* =========== Section Contact =========== */}
       <section id="contact" className="bg-amber-800 text-white py-20 md:py-28">
         <div className="container mx-auto px-6 text-center">
@@ -632,4 +684,3 @@ function App() {
 }
 
 export default App;
-
