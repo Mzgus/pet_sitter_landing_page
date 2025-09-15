@@ -41,6 +41,19 @@ function App() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const villes = ['Penchard', 'Crégy-Lès-Meaux', 'Meaux', 'Chambry', 'Chauconin', 'Villenoy', 'Varredes', 'Marcilly', 'Poincy', 'Nanteuil-Lès-Meaux' ,'Mareuil-lès-Meaux', 'Charny', 'Esbly', 'Jablines', 'Poincy', 'Villeroy', 'Triport'];
+
+  const renderVilles = () => {
+    return villes.map((ville, index) => (
+      <span
+        key={index}
+        className="bg-yellow-100 text-amber-800 font-semibold px-4 py-2 rounded-full"
+      >
+        {ville}
+      </span>
+    ));
+  }
+
   return (
     <div className="bg-yellow-50 text-stone-900 font-sans">
       {/* =========== Header / Barre de Navigation =========== */}
@@ -50,19 +63,40 @@ function App() {
             🐾 Petsitter Ornella
           </a>
           <div className="hidden md:flex space-x-8 items-center">
-            <a href="#services" className="text-stone-600 hover:text-amber-800 transition-colors">
+            <a
+              href="#services"
+              className="text-stone-600 hover:text-amber-800 transition-colors"
+            >
               Services
             </a>
-            <a href="#a-propos" className="text-stone-600 hover:text-amber-800 transition-colors">
+            <a
+              href="#a-propos"
+              className="text-stone-600 hover:text-amber-800 transition-colors"
+            >
               À Propos
             </a>
-            <a href="#temoignages" className="text-stone-600 hover:text-amber-800 transition-colors">
+            <a
+              href="#temoignages"
+              className="text-stone-600 hover:text-amber-800 transition-colors"
+            >
               Témoignages
             </a>
-            <a href="#tarifs" className="text-stone-600 hover:text-amber-800 transition-colors">
+            <a
+              href="#tarifs"
+              className="text-stone-600 hover:text-amber-800 transition-colors"
+            >
               Tarifs
             </a>
-            <a href="#contact" className="bg-amber-700 text-white px-5 py-2 rounded-full hover:bg-amber-800 transition-transform hover:scale-105 shadow-md">
+            <a
+              href="#zone"
+              className="text-stone-600 hover:text-amber-800 transition-colors"
+            >
+              Zone
+            </a>
+            <a
+              href="#contact"
+              className="bg-amber-700 text-white px-5 py-2 rounded-full hover:bg-amber-800 transition-transform hover:scale-105 shadow-md"
+            >
               Contactez-moi
             </a>
           </div>
@@ -70,20 +104,51 @@ function App() {
             <IconMenu />
           </button>
         </nav>
-        <div className={`${isMenuOpen ? "block" : "hidden"} md:hidden bg-white px-6 pb-4`}>
-          <a href="#services" onClick={toggleMenu} className="block py-2 text-stone-600 hover:text-amber-800">
+        <div
+          className={`${
+            isMenuOpen ? "block" : "hidden"
+          } md:hidden bg-white px-6 pb-4`}
+        >
+          <a
+            href="#services"
+            onClick={toggleMenu}
+            className="block py-2 text-stone-600 hover:text-amber-800"
+          >
             Services
           </a>
-          <a href="#a-propos" onClick={toggleMenu} className="block py-2 text-stone-600 hover:text-amber-800">
+          <a
+            href="#a-propos"
+            onClick={toggleMenu}
+            className="block py-2 text-stone-600 hover:text-amber-800"
+          >
             À Propos
           </a>
-          <a href="#temoignages" onClick={toggleMenu} className="block py-2 text-stone-600 hover:text-amber-800">
+          <a
+            href="#temoignages"
+            onClick={toggleMenu}
+            className="block py-2 text-stone-600 hover:text-amber-800"
+          >
             Témoignages
           </a>
-          <a href="#tarifs" onClick={toggleMenu} className="block py-2 text-stone-600 hover:text-amber-800">
+          <a
+            href="#tarifs"
+            onClick={toggleMenu}
+            className="block py-2 text-stone-600 hover:text-amber-800"
+          >
             Tarifs
           </a>
-          <a href="#contact" onClick={toggleMenu} className="block mt-2 text-center bg-amber-700 text-white px-5 py-2 rounded-full hover:bg-amber-800">
+          <a
+            href="#zone"
+            onClick={toggleMenu}
+            className="block py-2 text-stone-600 hover:text-amber-800"
+          >
+            Zone
+          </a>
+          <a
+            href="#contact"
+            onClick={toggleMenu}
+            className="block mt-2 text-center bg-amber-700 text-white px-5 py-2 rounded-full hover:bg-amber-800"
+          >
             Contactez-moi
           </a>
         </div>
@@ -103,10 +168,16 @@ function App() {
               l'esprit tranquille, je m'occupe de tout !
             </p>
             <div className="mt-8 flex justify-center md:justify-start gap-4">
-              <a href="#contact" className="bg-amber-700 text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-amber-800 transition-transform hover:scale-105 shadow-lg">
+              <a
+                href="#contact"
+                className="bg-amber-700 text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-amber-800 transition-transform hover:scale-105 shadow-lg"
+              >
                 Réserver une garde
               </a>
-              <a href="#services" className="bg-white text-amber-800 border border-amber-700 px-8 py-3 rounded-full font-semibold text-lg hover:bg-yellow-50 transition">
+              <a
+                href="#services"
+                className="bg-white text-amber-800 border border-amber-700 px-8 py-3 rounded-full font-semibold text-lg hover:bg-yellow-50 transition"
+              >
                 Voir les services
               </a>
             </div>
@@ -137,87 +208,125 @@ function App() {
             <div className="bg-yellow-50 p-8 rounded-2xl shadow-sm border border-yellow-200 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg flex flex-col">
               <div className="flex-grow">
                 <div className="bg-amber-100 text-amber-800 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                  <img src="/cat.svg" alt="" className="h-8 w-8"/>
+                  <img src="/cat.svg" alt="" className="h-8 w-8" />
                 </div>
-                <h3 className="text-2xl font-semibold mb-3">Transport toilettage</h3>
+                <h3 className="text-2xl font-semibold mb-3">
+                  Transport toilettage
+                </h3>
                 <p className="text-stone-700">
-                  Je m'occupe de transporter vos animaux chez le toiletteur pour vous faciliter la vie.
+                  Je m'occupe de transporter vos animaux chez le toiletteur pour
+                  vous faciliter la vie.
                 </p>
               </div>
-              <a href="#tarifs" className="mt-6 font-semibold text-amber-800 hover:text-amber-900 transition-colors self-start">
+              <a
+                href="#tarifs"
+                className="mt-6 font-semibold text-amber-800 hover:text-amber-900 transition-colors self-start"
+              >
                 Consulter les tarifs →
               </a>
             </div>
             <div className="bg-yellow-50 p-8 rounded-2xl shadow-sm border border-yellow-200 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg flex flex-col">
               <div className="flex-grow">
                 <div className="bg-amber-100 text-amber-800 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                  <img src="/home.svg" alt="" className="h-8 w-8"/>
+                  <img src="/home.svg" alt="" className="h-8 w-8" />
                 </div>
-                <h3 className="text-2xl font-semibold mb-3">Visites à domicile</h3>
+                <h3 className="text-2xl font-semibold mb-3">
+                  Visites à domicile
+                </h3>
                 <p className="text-stone-700">
-                  Une ou plusieurs visites par jour pour nourrir, jouer, nettoyer et câliner vos animaux. <br />
+                  Une ou plusieurs visites par jour pour nourrir, jouer,
+                  nettoyer et câliner vos animaux. <br />
                   Des visites de 20 minutes ou 40 minutes selon vos besoins.
                 </p>
               </div>
-              <a href="#tarifs" className="mt-6 font-semibold text-amber-800 hover:text-amber-900 transition-colors self-start">
+              <a
+                href="#tarifs"
+                className="mt-6 font-semibold text-amber-800 hover:text-amber-900 transition-colors self-start"
+              >
                 Consulter les tarifs →
               </a>
             </div>
             <div className="bg-yellow-50 p-8 rounded-2xl shadow-sm border border-yellow-200 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg flex flex-col">
               <div className="flex-grow">
                 <div className="bg-amber-100 text-amber-800 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                  <img src="/dog.svg" alt="" className="h-8 w-8"/>
+                  <img src="/dog.svg" alt="" className="h-8 w-8" />
                 </div>
-                <h3 className="text-2xl font-semibold mb-3">Promenades de chiens</h3>
+                <h3 className="text-2xl font-semibold mb-3">
+                  Promenades de chiens
+                </h3>
                 <p className="text-stone-700">
-                  Des balades stimulantes et amusantes pour que votre chien puisse se dépenser et socialiser en toute sécurité. <br />
+                  Des balades stimulantes et amusantes pour que votre chien
+                  puisse se dépenser et socialiser en toute sécurité. <br />
                   Des promenades de 20/40/1 heure/1 heure 30 selon vos besoins.
                 </p>
               </div>
-              <a href="#tarifs" className="mt-6 font-semibold text-amber-800 hover:text-amber-900 transition-colors self-start">
+              <a
+                href="#tarifs"
+                className="mt-6 font-semibold text-amber-800 hover:text-amber-900 transition-colors self-start"
+              >
                 Consulter les tarifs →
               </a>
             </div>
             <div className="bg-yellow-50 p-8 rounded-2xl shadow-sm border border-yellow-200 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg flex flex-col">
               <div className="flex-grow">
                 <div className="bg-amber-100 text-amber-800 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                  <img src="/dog.svg" alt="" className="h-8 w-8"/>
+                  <img src="/dog.svg" alt="" className="h-8 w-8" />
                 </div>
-                <h3 className="text-2xl font-semibold mb-3">Promenades de groupes</h3>
+                <h3 className="text-2xl font-semibold mb-3">
+                  Promenades de groupes
+                </h3>
                 <p className="text-stone-700">
-                  Des balades en petits groupes pour que votre chien puisse se dépenser et socialiser en toute sécurité. <br />
-                  Pour assurer une bonne entente, une première rencontre est organisée.
+                  Des balades en petits groupes pour que votre chien puisse se
+                  dépenser et socialiser en toute sécurité. <br />
+                  Pour assurer une bonne entente, une première rencontre est
+                  organisée.
                 </p>
               </div>
-              <a href="#tarifs" className="mt-6 font-semibold text-amber-800 hover:text-amber-900 transition-colors self-start">
+              <a
+                href="#tarifs"
+                className="mt-6 font-semibold text-amber-800 hover:text-amber-900 transition-colors self-start"
+              >
                 Consulter les tarifs →
               </a>
             </div>
             <div className="bg-yellow-50 p-8 rounded-2xl shadow-sm border border-yellow-200 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg flex flex-col">
               <div className="flex-grow">
                 <div className="bg-amber-100 text-amber-800 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                  <img src="/cat.svg" alt="" className="h-8 w-8"/>
+                  <img src="/cat.svg" alt="" className="h-8 w-8" />
                 </div>
-                <h3 className="text-2xl font-semibold mb-3">Forfaits et abonnements</h3>
+                <h3 className="text-2xl font-semibold mb-3">
+                  Forfaits et abonnements
+                </h3>
                 <p className="text-stone-700">
-                  Je vous propose des forfaits adaptés à vos besoins pour des promenades régulières à tarif avantageux. (ex : 10 promenades de 1 heure)
+                  Je vous propose des forfaits adaptés à vos besoins pour des
+                  promenades régulières à tarif avantageux. (ex : 10 promenades
+                  de 1 heure)
                 </p>
               </div>
-              <a href="#tarifs" className="mt-6 font-semibold text-amber-800 hover:text-amber-900 transition-colors self-start">
+              <a
+                href="#tarifs"
+                className="mt-6 font-semibold text-amber-800 hover:text-amber-900 transition-colors self-start"
+              >
                 Consulter les tarifs →
               </a>
             </div>
             <div className="bg-yellow-50 p-8 rounded-2xl shadow-sm border border-yellow-200 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg flex flex-col">
               <div className="flex-grow">
                 <div className="bg-amber-100 text-amber-800 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                  <img src="/home.svg" alt="" className="h-8 w-8"/>
+                  <img src="/home.svg" alt="" className="h-8 w-8" />
                 </div>
-                <h3 className="text-2xl font-semibold mb-3">Garde nuits à mon domicile</h3>
+                <h3 className="text-2xl font-semibold mb-3">
+                  Garde nuits à mon domicile
+                </h3>
                 <p className="text-stone-700">
-                  Je peux accueillir votre animal chez moi pour une garde et promenades en toute sécurité et dans un environnement familial.
+                  Je peux accueillir votre animal chez moi pour une garde en
+                  toute sécurité et dans un environnement familial.
                 </p>
               </div>
-              <a href="#tarifs" className="mt-6 font-semibold text-amber-800 hover:text-amber-900 transition-colors self-start">
+              <a
+                href="#tarifs"
+                className="mt-6 font-semibold text-amber-800 hover:text-amber-900 transition-colors self-start"
+              >
                 Consulter les tarifs →
               </a>
             </div>
@@ -226,7 +335,7 @@ function App() {
       </section>
 
       {/* =========== Section À Propos =========== */}
-      <section className="py-20 md:py-28">
+      <section id="a-propos" className="py-20 md:py-28">
         <div className="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-5/12">
             <img
@@ -250,8 +359,8 @@ function App() {
             </p>
             <p className="mt-4 text-lg text-stone-700">
               En plus de mes quelques années d'éxpériences, je vais passer mon
-              ACACED en septembre pour avoir un statut officiel, car le bien-être de vos
-              animaux est ma priorité.
+              ACACED en septembre pour avoir un statut officiel, car le
+              bien-être de vos animaux est ma priorité.
             </p>
           </div>
         </div>
@@ -271,9 +380,7 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-yellow-50 p-8 rounded-xl shadow-sm">
               <p className="text-stone-700 italic">
-                "Ornella a été incroyable avec notre chien Tao. Nous avons reçu
-                des photos tous les jours et l'avons retrouvé plus heureux que
-                jamais. Nous la recommandons les yeux fermés !"
+                "Ornella est une pet-sitter absolument géniale ! J’ai eu des nouvelles et des photos de Tao tous les jours, ce qui a été très rassurant. Tao a été accueilli chez elle, avec sa chienne, et ils se sont entendus à merveille. Entre les belles balades, les jeux et les câlins, il a passé un séjour parfait. On sent tout de suite qu’elle adore les animaux et qu’ils sont chouchoutés comme à la maison. Je la recommande les yeux fermés !"
               </p>
               <div className="mt-4 flex items-center">
                 <img
@@ -291,20 +398,25 @@ function App() {
             </div>
             <div className="bg-yellow-50 p-8 rounded-xl shadow-sm">
               <p className="text-stone-700 italic">
-                "Très professionnelle et douce avec notre chatte Poussy, qui est
-                pourtant très craintive. Un service de grande qualité, je suis
-                totalement rassurée quand je pars."
+                "Ornella est une excellente petsitter. Elle s'occupe très
+                régulièrement de mon labrador Reyna et de mon chat Clochette.
+                Elle les a même gardés pendant 5 jours lorsque j'étais en
+                vacances. Elle promène régulièrement Reyna en forêt et dans les
+                champs. Elle est une personne de confiance et dispose de très
+                belles qualités humaines. Elle a su créer une vraie interaction
+                avec ses animaux. Je vous recommande très vivement de faire
+                appel aux services d'Ornella !!!"
               </p>
               <div className="mt-4 flex items-center">
                 <img
-                  src="/poupous.jpeg"
+                  src="/reyna.jpg"
                   alt="Avatar client"
                   className="w-12 h-12 rounded-full mr-4 object-cover"
                 />
                 <div>
-                  <p className="font-semibold text-stone-900">Karine</p>
+                  <p className="font-semibold text-stone-900">Véro</p>
                   <p className="text-sm text-stone-500">
-                    Propriétaire de Poussy, Chat de gouttière
+                    Propriétaire de Reyna, Labrador noir
                   </p>
                 </div>
               </div>
@@ -363,16 +475,20 @@ function App() {
               </h3>
               <ul className="space-y-3 text-stone-700 flex-grow">
                 <li className="flex justify-between border-b pb-2">
-                  <span>20 minutes</span> <span className="font-bold text-stone-900">10€</span>
+                  <span>20 minutes</span>{" "}
+                  <span className="font-bold text-stone-900">10€</span>
                 </li>
                 <li className="flex justify-between border-b pb-2">
-                  <span>40 minutes</span> <span className="font-bold text-stone-900">13€</span>
+                  <span>40 minutes</span>{" "}
+                  <span className="font-bold text-stone-900">13€</span>
                 </li>
                 <li className="flex justify-between border-b pb-2">
-                  <span>1 heure</span> <span className="font-bold text-stone-900">15€</span>
+                  <span>1 heure</span>{" "}
+                  <span className="font-bold text-stone-900">15€</span>
                 </li>
                 <li className="flex justify-between">
-                  <span>1 heure 30</span> <span className="font-bold text-stone-900">18€</span>
+                  <span>1 heure 30</span>{" "}
+                  <span className="font-bold text-stone-900">18€</span>
                 </li>
               </ul>
             </div>
@@ -387,13 +503,16 @@ function App() {
                   </h4>
                   <ul className="space-y-2 text-stone-700 mt-2">
                     <li className="flex justify-between border-b pb-1">
-                      <span>1 par jour</span> <span className="font-bold text-stone-900">12€</span>
+                      <span>1 par jour</span>{" "}
+                      <span className="font-bold text-stone-900">12€</span>
                     </li>
                     <li className="flex justify-between border-b pb-1">
-                      <span>2 par jour</span> <span className="font-bold text-stone-900">18€</span>
+                      <span>2 par jour</span>{" "}
+                      <span className="font-bold text-stone-900">18€</span>
                     </li>
                     <li className="flex justify-between">
-                      <span>3 par jour</span> <span className="font-bold text-stone-900">23€</span>
+                      <span>3 par jour</span>{" "}
+                      <span className="font-bold text-stone-900">23€</span>
                     </li>
                   </ul>
                 </div>
@@ -403,13 +522,16 @@ function App() {
                   </h4>
                   <ul className="space-y-2 text-stone-700 mt-2">
                     <li className="flex justify-between border-b pb-1">
-                      <span>1 par jour</span> <span className="font-bold text-stone-900">16€</span>
+                      <span>1 par jour</span>{" "}
+                      <span className="font-bold text-stone-900">16€</span>
                     </li>
                     <li className="flex justify-between border-b pb-1">
-                      <span>2 par jour</span> <span className="font-bold text-stone-900">21€</span>
+                      <span>2 par jour</span>{" "}
+                      <span className="font-bold text-stone-900">21€</span>
                     </li>
                     <li className="flex justify-between">
-                      <span>3 par jour</span> <span className="font-bold text-stone-900">26€</span>
+                      <span>3 par jour</span>{" "}
+                      <span className="font-bold text-stone-900">26€</span>
                     </li>
                   </ul>
                 </div>
@@ -435,18 +557,48 @@ function App() {
                   <p className="font-semibold mt-1">Ex: 10€ pour 10km A/R</p>
                 </div>
                 <div className="border-t pt-4">
-                  <h4 className="font-bold text-stone-800">Garde nuits à mon domicile</h4>
-                  <p className="font-semibold mt-1">30€ petit/moyen chien par nuit</p>
+                  <h4 className="font-bold text-stone-800">
+                    Garde nuits à mon domicile
+                  </h4>
+                  <p className="font-semibold mt-1">
+                    30€ petit/moyen chien par nuit
+                  </p>
                   <p className="font-semibold mt-1">35€ grand chien par nuit</p>
                 </div>
               </div>
             </div>
           </div>
           <div className="mt-8 flex justify-center">
-            <a href="#contact" className="bg-amber-700 text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-amber-800 transition-transform hover:scale-105 shadow-lg">
+            <a
+              href="#contact"
+              className="bg-amber-700 text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-amber-800 transition-transform hover:scale-105 shadow-lg"
+            >
               Faire un devis !
             </a>
           </div>
+        </div>
+      </section>
+
+      {/* =========== Section Zone d'intervention (NOUVELLE) =========== */}
+      <section id="zone" className="bg-white py-20 md:py-28">
+        <div className="container mx-auto px-6 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-stone-900">
+            Zone d'intervention
+          </h2>
+          <p className="mt-4 text-stone-700 max-w-2xl mx-auto">
+            Je me déplace sans frais supplémentaires dans les villes suivantes
+            et leurs alentours proches :
+          </p>
+          <div
+            id="villes-container"
+            className="mt-8 flex flex-wrap justify-center gap-x-4 gap-y-2"
+          >
+            {renderVilles()}
+          </div>
+          <p className="mt-6 text-stone-600 italic">
+            Pour toute autre ville, un supplément de 5€ sera appliqué pour le
+            déplacement.
+          </p>
         </div>
       </section>
 
@@ -468,12 +620,30 @@ function App() {
               </p>
               <ul className="social">
                 <li data-tooltip="Facebook" style={{ "--bg": "#3a83f7" }}>
-                  <a target="_blank" rel="noopener noreferrer" className="shadow-lg" href="https://www.facebook.com/profile.php?id=61579984778894&locale=fr_FR" aria-label="Facebook">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="shadow-lg"
+                    href="https://www.facebook.com/profile.php?id=61579984778894&locale=fr_FR"
+                    aria-label="Facebook"
+                  >
                     <i className="fa-brands fa-facebook-f"></i>
                   </a>
                 </li>
-                <li data-tooltip="Instagram" style={{ "--bg": "linear-gradient(-45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5)"}}>
-                  <a target="_blank" rel="noopener noreferrer" className="shadow-lg" href="https://www.instagram.com/petsitter_ornella?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="Instagram">
+                <li
+                  data-tooltip="Instagram"
+                  style={{
+                    "--bg":
+                      "linear-gradient(-45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5)",
+                  }}
+                >
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="shadow-lg"
+                    href="https://www.instagram.com/petsitter_ornella?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    aria-label="Instagram"
+                  >
                     <i className="fa-brands fa-instagram"></i>
                   </a>
                 </li>
@@ -481,11 +651,18 @@ function App() {
             </div>
             <div className="flex items-center w-full max-w-xs">
               <div className="flex-grow border-t border-amber-600"></div>
-              <span className="flex-shrink mx-4 text-amber-200 font-bold">OU</span>
+              <span className="flex-shrink mx-4 text-amber-200 font-bold">
+                OU
+              </span>
               <div className="flex-grow border-t border-amber-600"></div>
             </div>
             <div className="w-full">
-              <a target="_blank" rel="noopener noreferrer" href="mailto:o.prevostat@gmail.com" className="bg-white text-amber-800 px-10 py-4 rounded-full font-bold text-lg hover:bg-yellow-50 transition-transform hover:scale-105 shadow-lg inline-block">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="mailto:o.prevostat@gmail.com"
+                className="bg-white text-amber-800 px-10 py-4 rounded-full font-bold text-lg hover:bg-yellow-50 transition-transform hover:scale-105 shadow-lg inline-block"
+              >
                 Envoyer un mail
               </a>
             </div>
@@ -507,4 +684,3 @@ function App() {
 }
 
 export default App;
-
