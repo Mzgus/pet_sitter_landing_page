@@ -41,7 +41,7 @@ function App() {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const villes = ['Penchard', 'Crégy-Lès-Meaux', 'Meaux', 'Chambry', 'Chauconin', 'Villenoy', 'Varredes', 'Marcilly', 'Poincy', 'Nanteuil-Lès-Meaux' ,'Mareuil-lès-Meaux', 'Charny', 'Esbly', 'Jablines', 'Poincy', 'Villeroy', 'Triport'];
+  const villes = ['Penchard', 'Crégy-Lès-Meaux', 'Meaux', 'Chambry', 'Chauconin', 'Villenoy', 'Varredes', 'Marcilly', 'Poincy', 'Nanteuil-Lès-Meaux' ,'Mareuil-lès-Meaux', 'Charny', 'Esbly', 'Jablines', 'Poincy', 'Villeroy', 'Trilport'];
 
   const renderVilles = () => {
     return villes.map((ville, index) => (
