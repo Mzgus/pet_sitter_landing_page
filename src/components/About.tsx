@@ -26,8 +26,8 @@ export const About: React.FC = () => {
             et offrir mes services en tant que pet sitter.
           </p>
           <p className="mt-4 text-lg text-stone-700">
-            En plus de mes quelques années d'expériences, je vais passer mon
-            ACACED en septembre pour avoir un statut officiel, car le
+            En plus de mes quelques années d'expériences, j'ai obtenu mon
+            ACACED en janvier pour avoir un statut officiel, car le
             bien-être de vos animaux est ma priorité.
           </p>
         </div>
