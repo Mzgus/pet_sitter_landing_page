@@ -22,7 +22,7 @@ export const Contact: React.FC = () => {
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="shadow-lg"
+                  className="shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-amber-800"
                   href="https://www.facebook.com/profile.php?id=61579984778894&locale=fr_FR"
                   aria-label="Facebook"
                 >
@@ -39,7 +39,7 @@ export const Contact: React.FC = () => {
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="shadow-lg"
+                  className="shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-amber-800"
                   href="https://www.instagram.com/petsitter_ornella?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                   aria-label="Instagram"
                 >
@@ -60,7 +60,7 @@ export const Contact: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
               href="mailto:o.prevostat@gmail.com"
-              className="bg-white text-amber-800 px-10 py-4 rounded-full font-bold text-lg hover:bg-yellow-50 transition-transform hover:scale-105 shadow-lg inline-block"
+              className="bg-white text-amber-800 px-10 py-4 rounded-full font-bold text-lg hover:bg-yellow-50 transition-transform hover:scale-105 shadow-lg inline-block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-amber-800"
             >
               Envoyer un mail
             </a>

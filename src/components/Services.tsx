@@ -32,7 +32,7 @@ export const Services: React.FC = () => {
               </div>
               <a
                 href="#tarifs"
-                className="mt-6 font-semibold text-amber-800 hover:text-amber-900 transition-colors self-start"
+                className="mt-6 font-semibold text-amber-800 hover:text-amber-900 transition-colors self-start focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-700 focus-visible:ring-offset-2 rounded"
               >
                 Consulter les tarifs →
               </a>

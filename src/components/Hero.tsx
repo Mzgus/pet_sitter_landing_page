@@ -17,13 +17,13 @@ export const Hero: React.FC = () => {
           <div className="mt-8 flex justify-center md:justify-start gap-4">
             <a
               href="#contact"
-              className="bg-amber-700 text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-amber-800 transition-transform hover:scale-105 shadow-lg"
+              className="bg-amber-700 text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-amber-800 transition-transform hover:scale-105 shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-700 focus-visible:ring-offset-2"
             >
               Réserver une garde
             </a>
             <a
               href="#services"
-              className="bg-white text-amber-800 border border-amber-700 px-8 py-3 rounded-full font-semibold text-lg hover:bg-yellow-50 transition"
+              className="bg-white text-amber-800 border border-amber-700 px-8 py-3 rounded-full font-semibold text-lg hover:bg-yellow-50 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-700 focus-visible:ring-offset-2"
             >
               Voir les services
             </a>
