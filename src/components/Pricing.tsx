@@ -5,7 +5,7 @@ export const Pricing: React.FC = () => {
     <section id="tarifs" className="bg-yellow-50 py-20 md:py-28">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-stone-900">
+          <h2 className="text-3xl md:text-4xl font-bold text-stone-900 font-display">
             Mes Tarifs
           </h2>
           <p className="mt-4 text-stone-700 max-w-3xl mx-auto">
@@ -16,7 +16,7 @@ export const Pricing: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Promenades Card */}
           <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 flex flex-col">
-            <h3 className="text-2xl font-semibold mb-4 text-amber-900">
+            <h3 className="text-2xl font-semibold mb-4 text-amber-900 font-display">
               Promenades
             </h3>
             <ul className="space-y-3 text-stone-700 flex-grow">
@@ -41,7 +41,7 @@ export const Pricing: React.FC = () => {
 
           {/* Visites à Domicile Card */}
           <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 flex flex-col">
-            <h3 className="text-2xl font-semibold mb-4 text-amber-900">
+            <h3 className="text-2xl font-semibold mb-4 text-amber-900 font-display">
               Visites à domicile
             </h3>
             <div className="flex-grow space-y-4">
@@ -88,7 +88,7 @@ export const Pricing: React.FC = () => {
 
           {/* Autres Prestations Card */}
           <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 flex flex-col">
-            <h3 className="text-2xl font-semibold mb-4 text-amber-900">
+            <h3 className="text-2xl font-semibold mb-4 text-amber-900 font-display">
               Autres Prestations
             </h3>
             <div className="flex-grow space-y-4 text-stone-700">

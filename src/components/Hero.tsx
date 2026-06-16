@@ -5,7 +5,7 @@ export const Hero: React.FC = () => {
     <main className="container mx-auto px-6 py-16 md:py-24">
       <div className="flex flex-col md:flex-row items-center justify-center gap-12">
         <div className="md:w-1/2 text-center md:text-left">
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight text-stone-900">
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight text-stone-900 font-display">
             Le bonheur de vos compagnons,
             <span className="text-amber-800"> ma priorité.</span>
           </h1>

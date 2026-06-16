@@ -6,7 +6,7 @@ export const Services: React.FC = () => {
     <section id="services" className="bg-white py-20 md:py-28">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-stone-900">
+          <h2 className="text-3xl md:text-4xl font-bold text-stone-900 font-display">
             Des services adaptés à chaque besoin
           </h2>
           <p className="mt-4 text-stone-700 max-w-2xl mx-auto">
@@ -24,7 +24,7 @@ export const Services: React.FC = () => {
                 <div className="bg-amber-100 text-amber-800 w-16 h-16 rounded-full flex items-center justify-center mb-6">
                   <img src={service.iconPath} alt="" className="h-8 w-8" />
                 </div>
-                <h3 className="text-2xl font-semibold mb-3">{service.title}</h3>
+                <h3 className="text-2xl font-semibold mb-3 font-display">{service.title}</h3>
                 <p
                   className="text-stone-700"
                   dangerouslySetInnerHTML={{ __html: service.description }}

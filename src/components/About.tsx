@@ -13,7 +13,7 @@ export const About: React.FC = () => {
           />
         </div>
         <div className="md:w-7/12 text-center md:text-left">
-          <h2 className="text-3xl md:text-4xl font-bold text-stone-900">
+          <h2 className="text-3xl md:text-4xl font-bold text-stone-900 font-display">
             Passionnée par les animaux avant tout
           </h2>
           <p className="mt-6 text-lg text-stone-700">

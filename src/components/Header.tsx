@@ -30,7 +30,7 @@ export const Header: React.FC = () => {
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center" aria-label="Navigation principale">
         <a
           href="#"
-          className="text-2xl font-bold text-amber-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-700 focus-visible:ring-offset-2 rounded"
+          className="text-2xl font-bold text-amber-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-700 focus-visible:ring-offset-2 rounded font-display"
         >
           🐾 Petsitter Ornella
         </a>

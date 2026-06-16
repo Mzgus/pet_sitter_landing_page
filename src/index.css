@@ -5,6 +5,9 @@
   --color-brand-accent: #b45309;
   --color-brand-bg: #fef9c3;
   --color-brand-bg-light: #fefdf0;
+
+  --font-sans: "Nunito Sans", sans-serif;
+  --font-display: "Varela Round", sans-serif;
 }
 
 /* :root {
