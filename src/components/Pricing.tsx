@@ -149,7 +149,7 @@ export const Pricing: React.FC = () => {
                   Garde à votre domicile
                 </h4>
                 <p className="font-semibold mt-1">
-                  30€ par nuit (moyen chien)
+                  30€ par nuit (chien moyen)
                 </p>
                 <p className="font-semibold mt-1">
                   35€ par nuit (grand chien)

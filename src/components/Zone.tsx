@@ -25,27 +25,7 @@ export const Zone: React.FC = () => {
             </span>
           ))}
         </div>
-        <div className="mt-8 max-w-lg mx-auto bg-amber-50 border border-amber-200 rounded-xl p-4 shadow-sm flex items-center justify-center gap-3">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="lucide lucide-calendar w-6 h-6 text-amber-700 flex-shrink-0"
-            aria-hidden="true"
-          >
-            <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
-            <path d="M16 2v4M8 2v4M3 10h18" />
-          </svg>
-          <p className="text-amber-900 font-semibold text-sm md:text-base">
-            À partir de juillet, je serai également disponible sur <span className="underline decoration-amber-500 decoration-2 font-bold">Le Vésinet</span> et ses alentours !
-          </p>
-        </div>
+
         <p className="mt-6 text-stone-600 italic">
           Pour toute autre ville, un supplément de 5€ sera appliqué pour le
           déplacement.

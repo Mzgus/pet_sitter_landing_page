@@ -17,18 +17,19 @@ export const About: React.FC = () => {
             Passionnée par les animaux avant tout
           </h2>
           <p className="mt-6 text-lg text-stone-700">
-            Bonjour, je m'appelle Ornella ! J'ai 20 ans et ma passion pour les
+            Bonjour, je m'appelle Ornella ! J'ai 21 ans et ma passion pour les
             animaux remonte à mon enfance.
           </p>
           <p className="mt-4 text-lg text-stone-700">
-            Depuis 4 ans j'ai la chance d'avoir mon propre chien et j'adore
+            Depuis 5 ans, j'ai la chance d'avoir mon propre chien et j'adore
             m'occuper de ceux de mes proches. Je souhaite élargir mon cercle
             et offrir mes services en tant que pet sitter.
           </p>
           <p className="mt-4 text-lg text-stone-700">
-            En plus de mes quelques années d'expériences, j'ai obtenu mon
-            ACACED en janvier pour avoir un statut officiel, car le
-            bien-être de vos animaux est ma priorité.
+            En plus de mes quelques années d'expérience, j'ai obtenu mon
+            ACACED chien et chat en janvier pour avoir un statut officiel. Je
+            suis également déclarée en auto-entrepreneur, car le bien-être de
+            vos animaux est ma priorité.
           </p>
         </div>
       </div>
