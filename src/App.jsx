@@ -41,7 +41,11 @@ function App() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+<<<<<<< Updated upstream
   const villes = ['Penchard', 'Crégy-Lès-Meaux', 'Meaux', 'Chambry', 'Chauconin', 'Villenoy', 'Varredes', 'Marcilly', 'Poincy', 'Nanteuil-Lès-Meaux' ,'Mareuil-lès-Meaux', 'Charny', 'Esbly', 'Jablines', 'Poincy', 'Villeroy', 'Triport'];
+=======
+  const villes = ['Penchard', 'Crégy-Lès-Meaux', 'Meaux', 'Chambry', 'Chauconin', 'Villenoy', 'Varredes', 'Marcilly', 'Poincy', 'Nanteuil-Lès-Meaux' ,'Mareuil-lès-Meaux', 'Charny', 'Esbly', 'Jablines', 'Villeroy', 'Trilport'];
+>>>>>>> Stashed changes
 
   const renderVilles = () => {
     return villes.map((ville, index) => (
@@ -319,8 +323,26 @@ function App() {
                   Garde nuits à mon domicile
                 </h3>
                 <p className="text-stone-700">
-                  Je peux accueillir votre animal chez moi pour une garde en
-                  toute sécurité et dans un environnement familial.
+                  Je peux accueillir votre animal chez moi pour une garde en toute sécurité et dans un environnement familial. <strong>Concerne uniquement les petits chiens (ex : Chihuahua, etc.).</strong>
+                </p>
+              </div>
+              <a
+                href="#tarifs"
+                className="mt-6 font-semibold text-amber-800 hover:text-amber-900 transition-colors self-start"
+              >
+                Consulter les tarifs →
+              </a>
+            </div>
+            <div className="bg-yellow-50 p-8 rounded-2xl shadow-sm border border-yellow-200 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg flex flex-col">
+              <div className="flex-grow">
+                <div className="bg-amber-100 text-amber-800 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                  <img src="/home.svg" alt="" className="h-8 w-8" />
+                </div>
+                <h3 className="text-2xl font-semibold mb-3">
+                  Garde à votre domicile
+                </h3>
+                <p className="text-stone-700">
+                  Je viens garder votre compagnon directement chez vous pour qu'il conserve ses repères et ses habitudes de vie. <strong>Concerne les chiens moyens et grands.</strong>
                 </p>
               </div>
               <a
@@ -358,7 +380,7 @@ function App() {
               et offrir mes services en tant que pet sitter.
             </p>
             <p className="mt-4 text-lg text-stone-700">
-              En plus de mes quelques années d'éxpériences, je vais passer mon
+              En plus de mes quelques années d'expériences, je vais passer mon
               ACACED en septembre pour avoir un statut officiel, car le
               bien-être de vos animaux est ma priorité.
             </p>
@@ -447,7 +469,7 @@ function App() {
                   </p>
                   <p className="text-sm text-stone-500">
                     Propriétaire de Savannah, Berger Allemand et Charlie, <br />
-                    Chiwawa
+                    Chihuahua
                   </p>
                 </div>
               </div>
@@ -561,9 +583,19 @@ function App() {
                     Garde nuits à mon domicile
                   </h4>
                   <p className="font-semibold mt-1">
-                    30€ petit/moyen chien par nuit
+                    30€ par nuit (petits chiens uniquement, ex : Chihuahua)
                   </p>
-                  <p className="font-semibold mt-1">35€ grand chien par nuit</p>
+                </div>
+                <div className="border-t pt-4">
+                  <h4 className="font-bold text-stone-800">
+                    Garde à votre domicile
+                  </h4>
+                  <p className="font-semibold mt-1">
+                    30€ par nuit (moyen chien)
+                  </p>
+                  <p className="font-semibold mt-1">
+                    35€ par nuit (grand chien)
+                  </p>
                 </div>
               </div>
             </div>
@@ -594,6 +626,12 @@ function App() {
             className="mt-8 flex flex-wrap justify-center gap-x-4 gap-y-2"
           >
             {renderVilles()}
+          </div>
+          <div className="mt-8 max-w-lg mx-auto bg-amber-50 border border-amber-200 rounded-xl p-4 shadow-sm flex items-center justify-center gap-3">
+            <span className="text-2xl">📅</span>
+            <p className="text-amber-900 font-semibold text-sm md:text-base">
+              À partir de juillet, je serai également disponible sur <span className="underline decoration-amber-500 decoration-2 font-bold">Le Vésinet</span> et ses alentours !
+            </p>
           </div>
           <p className="mt-6 text-stone-600 italic">
             Pour toute autre ville, un supplément de 5€ sera appliqué pour le
