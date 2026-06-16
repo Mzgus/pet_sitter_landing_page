@@ -20,20 +20,32 @@ export const Pricing: React.FC = () => {
               Promenades
             </h3>
             <ul className="space-y-3 text-stone-700 flex-grow">
-              <li className="flex justify-between border-b pb-2">
-                <span>20 minutes</span>{" "}
+              <li className="flex justify-between items-center border-b border-stone-100 pb-2">
+                <span className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-amber-600"></span>
+                  20 minutes
+                </span>{" "}
                 <span className="font-bold text-stone-900">10€</span>
               </li>
-              <li className="flex justify-between border-b pb-2">
-                <span>40 minutes</span>{" "}
+              <li className="flex justify-between items-center border-b border-stone-100 pb-2">
+                <span className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-amber-600"></span>
+                  40 minutes
+                </span>{" "}
                 <span className="font-bold text-stone-900">13€</span>
               </li>
-              <li className="flex justify-between border-b pb-2">
-                <span>1 heure</span>{" "}
+              <li className="flex justify-between items-center border-b border-stone-100 pb-2">
+                <span className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-amber-600"></span>
+                  1 heure
+                </span>{" "}
                 <span className="font-bold text-stone-900">15€</span>
               </li>
-              <li className="flex justify-between">
-                <span>1 heure 30</span>{" "}
+              <li className="flex justify-between items-center">
+                <span className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-amber-600"></span>
+                  1 heure 30
+                </span>{" "}
                 <span className="font-bold text-stone-900">18€</span>
               </li>
             </ul>
@@ -50,16 +62,25 @@ export const Pricing: React.FC = () => {
                   Visites de 20 minutes
                 </h4>
                 <ul className="space-y-2 text-stone-700 mt-2">
-                  <li className="flex justify-between border-b pb-1">
-                    <span>1 par jour</span>{" "}
+                  <li className="flex justify-between items-center border-b border-stone-100 pb-1">
+                    <span className="flex items-center gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-amber-600"></span>
+                      1 par jour
+                    </span>{" "}
                     <span className="font-bold text-stone-900">12€</span>
                   </li>
-                  <li className="flex justify-between border-b pb-1">
-                    <span>2 par jour</span>{" "}
+                  <li className="flex justify-between items-center border-b border-stone-100 pb-1">
+                    <span className="flex items-center gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-amber-600"></span>
+                      2 par jour
+                    </span>{" "}
                     <span className="font-bold text-stone-900">18€</span>
                   </li>
-                  <li className="flex justify-between">
-                    <span>3 par jour</span>{" "}
+                  <li className="flex justify-between items-center">
+                    <span className="flex items-center gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-amber-600"></span>
+                      3 par jour
+                    </span>{" "}
                     <span className="font-bold text-stone-900">23€</span>
                   </li>
                 </ul>
@@ -69,16 +90,25 @@ export const Pricing: React.FC = () => {
                   Visites de 40 minutes
                 </h4>
                 <ul className="space-y-2 text-stone-700 mt-2">
-                  <li className="flex justify-between border-b pb-1">
-                    <span>1 par jour</span>{" "}
+                  <li className="flex justify-between items-center border-b border-stone-100 pb-1">
+                    <span className="flex items-center gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-amber-600"></span>
+                      1 par jour
+                    </span>{" "}
                     <span className="font-bold text-stone-900">16€</span>
                   </li>
-                  <li className="flex justify-between border-b pb-1">
-                    <span>2 par jour</span>{" "}
+                  <li className="flex justify-between items-center border-b border-stone-100 pb-1">
+                    <span className="flex items-center gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-amber-600"></span>
+                      2 par jour
+                    </span>{" "}
                     <span className="font-bold text-stone-900">21€</span>
                   </li>
-                  <li className="flex justify-between">
-                    <span>3 par jour</span>{" "}
+                  <li className="flex justify-between items-center">
+                    <span className="flex items-center gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-amber-600"></span>
+                      3 par jour
+                    </span>{" "}
                     <span className="font-bold text-stone-900">26€</span>
                   </li>
                 </ul>
