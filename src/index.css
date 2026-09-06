@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+@theme {
+  --color-brand-primary: #78350f;
+  --color-brand-accent: #b45309;
+  --color-brand-bg: #fef9c3;
+  --color-brand-bg-light: #fefdf0;
+
+  --font-sans: "Nunito Sans", sans-serif;
+  --font-display: "Varela Round", sans-serif;
+}
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
