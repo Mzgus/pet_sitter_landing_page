@@ -46,14 +46,14 @@ export interface ProcessStep {
 
 export const contactInfo = {
   phoneDisplay: "06 88 99 10 61",
-  phoneRaw: "0688991061",
+  phoneRaw: "0688991961",
   email: "o.prevostat@gmail.com",
   hours: "9h - 20h (joignable 7j/7)",
   notice: "Uniquement par message (SMS ou WhatsApp) pour préserver le calme auprès des animaux lors des prestations.",
   whatsappUrl: `https://wa.me/33688991061?text=${encodeURIComponent(
     "Bonjour Ornella, je souhaiterais des renseignements pour la garde / balade de mon animal."
   )}`,
-  smsUrl: `sms:0688991061?body=${encodeURIComponent(
+  smsUrl: `sms:0688991961?body=${encodeURIComponent(
     "Bonjour Ornella, je souhaiterais des renseignements pour la garde / balade de mon animal."
   )}`
 };
@@ -104,7 +104,7 @@ export const gardesData: GardeFormula[] = [
       "Balades quotidiennes adaptées au rythme de l'animal",
       "Maintien de la sécurité de votre domicile"
     ],
-    note: "Avantage 2 semaines : 390 € × 2 - 50 €"
+    note: "Économisez 180 € sur 2 semaines !"
   },
   {
     id: "nuit-balades",
@@ -121,7 +121,7 @@ export const gardesData: GardeFormula[] = [
       "Repas du matin et du soir respectés à l'heure",
       "Photos et nouvelles chaque jour"
     ],
-    note: "Avantage 2 semaines : 315 € × 2 - 50 €"
+    note: "Économisez 120 € sur 2 semaines !"
   },
   {
     id: "visites-quotidiennes",

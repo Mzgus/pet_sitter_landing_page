@@ -64,41 +64,68 @@ export const Contact: React.FC = () => {
           </a>
         </div>
 
-        {/* Réseaux Sociaux */}
-        <div className="mt-14 pt-8 border-t border-amber-800">
-          <p className="text-amber-300 text-sm font-semibold mb-4">
-            Suivez les aventures du quotidien sur les réseaux :
+        {/* Réseaux Sociaux - Option 3 : Boutons-bannières chic */}
+        <div className="mt-14 pt-8 border-t border-amber-800/80">
+          <p className="text-amber-300 text-xs sm:text-sm font-bold uppercase tracking-wider mb-2">
+            Rejoignez la communauté
           </p>
-          <ul className="social">
-            <li data-tooltip="Facebook" style={{ "--bg": "#3a83f7" } as React.CSSProperties}>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                className="shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-amber-800"
-                href="https://www.facebook.com/profile.php?id=61579984778894&locale=fr_FR"
-                aria-label="Facebook"
-              >
-                <i className="fa-brands fa-facebook-f"></i>
-              </a>
-            </li>
-            <li
-              data-tooltip="Instagram"
-              style={{
-                "--bg":
-                  "linear-gradient(-45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5)",
-              } as React.CSSProperties}
+          <p className="text-amber-100 text-sm mb-6">
+            Suivez en direct les aventures, balades et photos de nos pensionnaires :
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto text-left">
+            {/* Bannière Instagram */}
+            <a
+              href="https://www.instagram.com/petsitter_ornella?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center justify-between p-4 rounded-2xl bg-white/10 hover:bg-white/15 border border-white/15 hover:border-amber-400/50 backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
             >
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                className="shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-amber-800"
-                href="https://www.instagram.com/petsitter_ornella?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                aria-label="Instagram"
-              >
-                <i className="fa-brands fa-instagram"></i>
-              </a>
-            </li>
-          </ul>
+              <div className="flex items-center gap-3.5">
+                <div className="w-11 h-11 rounded-xl bg-gradient-to-tr from-amber-500 via-rose-500 to-purple-600 flex items-center justify-center text-white text-xl shadow-md group-hover:scale-105 transition-transform">
+                  <i className="fa-brands fa-instagram"></i>
+                </div>
+                <div>
+                  <div className="flex items-center gap-1.5">
+                    <span className="font-extrabold text-white text-sm">Instagram</span>
+                    <span className="text-[11px] text-amber-300 font-semibold">@petsitter_ornella</span>
+                  </div>
+                  <p className="text-xs text-amber-100/80 mt-0.5">
+                    Photos, vidéos & stories du jour
+                  </p>
+                </div>
+              </div>
+              <span className="text-amber-300 group-hover:text-white text-base font-bold ml-2 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
+                ↗
+              </span>
+            </a>
+
+            {/* Bannière Facebook */}
+            <a
+              href="https://www.facebook.com/profile.php?id=61579984778894&locale=fr_FR"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center justify-between p-4 rounded-2xl bg-white/10 hover:bg-white/15 border border-white/15 hover:border-blue-400/50 backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+            >
+              <div className="flex items-center gap-3.5">
+                <div className="w-11 h-11 rounded-xl bg-blue-600 flex items-center justify-center text-white text-xl shadow-md group-hover:scale-105 transition-transform">
+                  <i className="fa-brands fa-facebook-f"></i>
+                </div>
+                <div>
+                  <div className="flex items-center gap-1.5">
+                    <span className="font-extrabold text-white text-sm">Facebook</span>
+                    <span className="text-[11px] text-amber-300 font-semibold">Petsitter Ornella</span>
+                  </div>
+                  <p className="text-xs text-amber-100/80 mt-0.5">
+                    Actualités & avis de la communauté
+                  </p>
+                </div>
+              </div>
+              <span className="text-amber-300 group-hover:text-white text-base font-bold ml-2 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
+                ↗
+              </span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
