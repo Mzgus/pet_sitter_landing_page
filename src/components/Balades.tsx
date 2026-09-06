@@ -67,8 +67,14 @@ export const Balades: React.FC = () => {
               ))}
             </div>
 
-            <div className="mt-6 pt-4 border-t border-stone-200 text-xs text-stone-600 italic">
-              Sorties réalisées entre 11h et 15h au Vésinet et à Saint-Germain-en-Laye.
+            <div className="mt-6 pt-4 border-t border-stone-200 flex items-center justify-between text-xs text-stone-600">
+              <span className="italic">Sorties de 11h à 15h</span>
+              <a
+                href="#contact"
+                className="bg-amber-800 text-white font-bold px-4 py-2 rounded-full hover:bg-amber-900 transition-colors shadow-xs"
+              >
+                Réserver une balade →
+              </a>
             </div>
           </div>
 
