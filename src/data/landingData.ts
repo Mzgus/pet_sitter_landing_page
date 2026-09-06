@@ -13,76 +13,181 @@ export interface TestimonialItem {
   avatarPath: string;
 }
 
+export interface GardeFormula {
+  id: string;
+  title: string;
+  badge?: string;
+  isPopular?: boolean;
+  description: string;
+  price7Days: number;
+  originalPrice7Days: number;
+  price14Days?: number;
+  originalPrice14Days?: number;
+  advantages: string[];
+  note?: string;
+}
+
+export interface BaladeOption {
+  duration: string;
+  label: string;
+  description: string;
+  singlePrice: number;
+  forfaitPrice: number;
+  forfaitSavings: number;
+  unitPriceInForfait: number;
+}
+
+export interface ProcessStep {
+  step: number;
+  badge: string;
+  title: string;
+  description: string;
+}
+
+export const contactInfo = {
+  phoneDisplay: "06 88 99 10 61",
+  phoneRaw: "0688991061",
+  email: "o.prevostat@gmail.com",
+  hours: "9h - 20h (joignable 7j/7)",
+  notice: "Uniquement par message (SMS ou WhatsApp) pour préserver le calme auprès des animaux lors des prestations.",
+  whatsappUrl: `https://wa.me/33688991061?text=${encodeURIComponent(
+    "Bonjour Ornella, je souhaiterais des renseignements pour la garde / balade de mon animal."
+  )}`,
+  smsUrl: `sms:0688991061?body=${encodeURIComponent(
+    "Bonjour Ornella, je souhaiterais des renseignements pour la garde / balade de mon animal."
+  )}`
+};
+
 export const villes: string[] = [
   "Le Vésinet",
-  "Saint-Germain-en-Laye",
-  "Croissy-sur-Seine",
-  "Chatou"
+  "Saint-Germain-en-Laye"
 ];
 
-export const servicesData: ServiceItem[] = [
+export const processSteps: ProcessStep[] = [
   {
-    id: "transport",
-    title: "Transport toilettage",
-    description: "Je m'occupe de transporter vos animaux chez le toiletteur pour vous faciliter la vie.",
-    iconPath: "/cat.svg"
+    step: 1,
+    badge: "OFFERT (45 min)",
+    title: "La Pré-visite à domicile",
+    description:
+      "Je viens vous rencontrer directement chez vous pour faire connaissance avec votre compagnon, comprendre ses habitudes et instaurer un vrai lien de confiance."
   },
   {
-    id: "visites",
-    title: "Visites à domicile",
-    description: "Une ou plusieurs visites par jour pour nourrir, jouer, nettoyer et câliner vos animaux. Des visites de 20 minutes ou 40 minutes selon vos besoins.",
-    iconPath: "/home.svg"
+    step: 2,
+    badge: "Réservation sûre",
+    title: "Choix de formule & Acompte",
+    description:
+      "Nous choisissons la formule la plus adaptée (Long séjour, Nuit/Balades ou Visites). Un acompte de 30% bloque définitivement vos dates pour la semaine."
   },
   {
-    id: "promenades",
-    title: "Promenades de chiens",
-    description: "Des balades stimulantes et amusantes pour que votre chien puisse se dépenser et socialiser en toute sécurité. Des promenades de 20/40/1 heure/1 heure 30 selon vos besoins.",
-    iconPath: "/dog.svg"
+    step: 3,
+    badge: "Sérénité 100%",
+    title: "Suivi & Nouvelles au quotidien",
+    description:
+      "Pendant vos absences, recevez régulièrement des photos, vidéos et petits messages rassurants pour suivre les aventures et le bien-être de votre compagnon."
+  }
+];
+
+export const gardesData: GardeFormula[] = [
+  {
+    id: "long-sejour",
+    title: "Long Séjour",
+    badge: "🌟 Le Plus Complet",
+    isPopular: true,
+    description: "Présence continue, nuits sur place, soins, repas et balades quotidiennes incluses.",
+    price7Days: 390,
+    originalPrice7Days: 455,
+    price14Days: 730,
+    originalPrice14Days: 910,
+    advantages: [
+      "Présence continue et nuits passées sur place",
+      "Soins, alimentation et câlins illimités",
+      "Balades quotidiennes adaptées au rythme de l'animal",
+      "Maintien de la sécurité de votre domicile"
+    ],
+    note: "Avantage 2 semaines : 390 € × 2 - 50 €"
   },
   {
-    id: "groupes",
-    title: "Promenades de groupes",
-    description: "Des balades en petits groupes pour que votre chien puisse se dépenser et socialiser en toute sécurité. Pour assurer une bonne entente, une première rencontre est organisée.",
-    iconPath: "/dog.svg"
+    id: "nuit-balades",
+    title: "Nuit & Balades",
+    badge: "🔥 Populaire & Équilibré",
+    description: "Présence de 18h à 9h (nuit + soins complets) + 1 passage/balade dans la journée.",
+    price7Days: 315,
+    originalPrice7Days: 350,
+    price14Days: 580,
+    originalPrice14Days: 700,
+    advantages: [
+      "Présence du soir au matin : de 18h à 9h",
+      "1 passage ou promenade dédié dans la journée",
+      "Repas du matin et du soir respectés à l'heure",
+      "Photos et nouvelles chaque jour"
+    ],
+    note: "Avantage 2 semaines : 315 € × 2 - 50 €"
   },
   {
-    id: "forfaits",
-    title: "Forfaits et abonnements",
-    description: "Je vous propose des forfaits adaptés à vos besoins pour des promenades régulières à tarif avantageux. (ex : 10 promenades de 1 heure)",
-    iconPath: "/cat.svg"
+    id: "visites-quotidiennes",
+    title: "Visites Quotidiennes",
+    badge: "🐱 Idéal Chats & Autonomes",
+    description: "2 passages de 45 min par jour (sans nuitée) pour sorties, nourriture et compagnie.",
+    price7Days: 215,
+    originalPrice7Days: 255,
+    advantages: [
+      "2 visites quotidiennes complètes de 45 minutes",
+      "Sorties pipi, renouvellement d'eau et nourriture",
+      "Nettoyage des litières et espace de vie",
+      "Jeux, brossage et moments d'affection"
+    ],
+    note: "2 visites de 45 min chaque jour à domicile"
+  }
+];
+
+export const baladesData: BaladeOption[] = [
+  {
+    duration: "1h30",
+    label: "Grande Balade",
+    description: "Pour les chiens sportifs et pleins d'énergie",
+    singlePrice: 27,
+    forfaitPrice: 240,
+    forfaitSavings: 30,
+    unitPriceInForfait: 24
   },
   {
-    id: "garde-mon-domicile",
-    title: "Garde nuits à mon domicile",
-    description: "Je peux accueillir votre animal chez moi pour une garde en toute sécurité et dans un environnement familial. Concerne uniquement les petits chiens (ex : Chihuahua, etc.).",
-    iconPath: "/home.svg"
+    duration: "45 min / 1h",
+    label: "Balade Standard",
+    description: "Le format idéal et équilibré pour le quotidien",
+    singlePrice: 23,
+    forfaitPrice: 215,
+    forfaitSavings: 15,
+    unitPriceInForfait: 21.5
   },
   {
-    id: "garde-votre-domicile",
-    title: "Garde à votre domicile",
-    description: "Je viens garder votre compagnon directement chez vous pour qu'il conserve ses repères et ses habitudes de vie. Concerne les chiens moyens et grands.",
-    iconPath: "/home.svg"
+    duration: "20 min",
+    label: "Sortie Express",
+    description: "Sortie hygiénique rapide et pause pipi",
+    singlePrice: 15,
+    forfaitPrice: 140,
+    forfaitSavings: 10,
+    unitPriceInForfait: 14
   }
 ];
 
 export const testimonialsData: TestimonialItem[] = [
   {
     id: "1",
-    quote: "Ornella est une pet-sitter absolument géniale ! J’ai eu des nouvelles et des photos de Tao tous les jours, ce qui a été très rassurant. Tao a été accueilli chez elle, avec sa chienne, et ils se sont entendus à merveille. Entre les belles balades, les jeux et les câlins, il a passé un séjour parfait. On sent tout de suite qu’elle adore les animaux et qu’ils sont chouchoutés comme à la maison. Je la recommande les yeux fermés !",
+    quote: "Ornella est une pet-sitter absolument géniale ! J’ai eu des nouvelles et des photos de Tao tous les jours, ce qui a été très rassurant. Tao a passé un séjour parfait entre les belles balades, les jeux et les câlins. On sent tout de suite qu’elle adore les animaux. Je la recommande les yeux fermés !",
     author: "Lauriane",
     petDetails: "Propriétaire de Tao, Labrador",
     avatarPath: "/tao.png"
   },
   {
     id: "2",
-    quote: "Ornella est une excellente petsitter. Elle s'occupe très régulièrement de mon labrador Reyna et de mon chat Clochette. Elle les a même gardés pendant 5 jours lorsque j'étais en vacances. Elle promène régulièrement Reyna en forêt et dans les champs. Elle est une personne de confiance et dispose de très belles qualités humaines. Elle a su créer une vraie interaction avec mes animaux. Je vous recommande très vivement de faire appel aux services d'Ornella !!!",
+    quote: "Ornella est une excellente petsitter. Elle s'occupe très régulièrement de mon labrador Reyna et de mon chat Clochette. Elle promène régulièrement Reyna en forêt. Elle est une personne de confiance et dispose de très belles qualités humaines. Je vous recommande très vivement ses services !!!",
     author: "Véro",
     petDetails: "Propriétaire de Reyna, Labrador noir",
     avatarPath: "/reyna.jpg"
   },
   {
     id: "3",
-    quote: "J’ai confié mes deux chiennes, Charlie (chihuahua) et Savannah (berger allemand), à Ornella et je ne pouvais pas espérer meilleure expérience ! Elle a été aux petits soins avec elles, attentive aussi bien aux besoins de la petite qu’à ceux de la grande. On sent tout de suite qu’elle aime vraiment les animaux et qu’elle sait s’adapter à leur caractère. J’ai eu des nouvelles régulièrement, ce qui m’a permis d’être totalement rassuré. Mes chiennes sont revenues heureuses et détendues. Je recommande vivement Ornella à tous ceux qui cherchent une personne de confiance pour garder leurs compagnons à quatre pattes !",
+    quote: "J’ai confié mes deux chiennes, Charlie (chihuahua) et Savannah (berger allemand), à Ornella et je ne pouvais pas espérer meilleure expérience ! Attentive aussi bien aux besoins de la petite qu’à ceux de la grande. Mes chiennes sont revenues heureuses et détendues. Une vraie personne de confiance !",
     author: "Carine et Julien",
     petDetails: "Propriétaire de Savannah, Berger Allemand et Charlie, Chihuahua",
     avatarPath: "/savannah.jpeg"

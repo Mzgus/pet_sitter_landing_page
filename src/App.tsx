@@ -1,23 +1,25 @@
 import React from "react";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
-import { Services } from "./components/Services";
+import { Process } from "./components/Process";
+import { Gardes } from "./components/Gardes";
+import { Balades } from "./components/Balades";
 import { About } from "./components/About";
 import { Testimonials } from "./components/Testimonials";
-import { Pricing } from "./components/Pricing";
 import { Zone } from "./components/Zone";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 
 export const App: React.FC = () => {
   return (
-    <div className="bg-yellow-50 text-stone-900 font-sans">
+    <div className="bg-amber-50/40 text-stone-900 font-sans selection:bg-amber-200">
       <Header />
       <Hero />
-      <Services />
+      <Process />
+      <Gardes />
+      <Balades />
       <About />
       <Testimonials />
-      <Pricing />
       <Zone />
       <Contact />
       <Footer />
